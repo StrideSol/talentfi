@@ -64,15 +64,6 @@ export default function EducationalResources() {
             ))
           )}
         </div>
-
-        <div className="text-center mt-10">
-          <Button
-            variant="outline"
-            className="inline-block bg-white border border-[#0047FF] text-[#0047FF] py-2 px-6 rounded-md font-semibold hover:bg-[#f7f7f7]"
-          >
-            Browse All Country Guides
-          </Button>
-        </div>
       </div>
     </section>
   );
