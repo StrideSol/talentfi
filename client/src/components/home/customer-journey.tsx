@@ -34,7 +34,7 @@ export default function CustomerJourney() {
             <div className="w-full md:w-5/6 md:pl-8">
               <h3 className="text-xl font-bold text-white mb-2">Consideration Stage</h3>
               <p className="text-gray-200 mb-2">Customer explores talentfi's website, reads case studies, and watches informational videos.</p>
-              <p className="text-gray-200">Downloads a free guide on international hiring compliance.</p>
+              <p className="text-gray-200">Downloads a free guide on South African hiring and labor compliance.</p>
             </div>
           </div>
 
