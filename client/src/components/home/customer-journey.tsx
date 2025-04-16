@@ -76,7 +76,7 @@ export default function CustomerJourney() {
             <div className="w-full md:w-5/6 md:pl-8">
               <h3 className="text-xl font-bold text-white mb-2">Loyalty & Advocacy Stage</h3>
               <p className="text-gray-200 mb-2">Customer experiences hassle-free hiring and payroll.</p>
-              <p className="text-gray-200">Becomes a brand advocate, referring other businesses to Talentfi.</p>
+              <p className="text-gray-200">Becomes a brand advocate, referring other businesses to talentfi.</p>
             </div>
           </div>
         </div>

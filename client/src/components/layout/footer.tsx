@@ -12,7 +12,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">About talentfi</h3>
             <p className="text-gray-300 mb-4">
-              talentfi is South Africa's premier Employer of Record service helping international businesses hire and manage employees in South Africa with full compliance.
+              talentfi is South Africa's premier Employee of Record service helping international businesses hire and manage employees in South Africa with full compliance.
             </p>
             <div className="flex space-x-4 text-gray-300">
               <a href="#" className="hover:text-white" aria-label="Facebook">
