@@ -183,6 +183,48 @@ export class MemStorage implements IStorage {
     this.newsletterSubscriptions.set(id, subscription);
     return subscription;
   }
+  
+  // Carousel methods
+  async getCarouselSlides(): Promise<CarouselSlide[]> {
+    return Array.from(this.carouselSlides.values())
+      .filter(slide => slide.isActive)
+      .sort((a, b) => a.order - b.order);
+  }
+  
+  async getCarouselSlide(id: number): Promise<CarouselSlide | undefined> {
+    return this.carouselSlides.get(id);
+  }
+  
+  async createCarouselSlide(data: InsertCarouselSlide): Promise<CarouselSlide> {
+    const id = this.carouselSlideId++;
+    const now = new Date();
+    const slide: CarouselSlide = { 
+      ...data, 
+      id, 
+      createdAt: now,
+      updatedAt: now
+    };
+    this.carouselSlides.set(id, slide);
+    return slide;
+  }
+  
+  async updateCarouselSlide(id: number, data: Partial<InsertCarouselSlide>): Promise<CarouselSlide | undefined> {
+    const slide = this.carouselSlides.get(id);
+    if (!slide) return undefined;
+    
+    const updatedSlide: CarouselSlide = {
+      ...slide,
+      ...data,
+      updatedAt: new Date()
+    };
+    
+    this.carouselSlides.set(id, updatedSlide);
+    return updatedSlide;
+  }
+  
+  async deleteCarouselSlide(id: number): Promise<boolean> {
+    return this.carouselSlides.delete(id);
+  }
 }
 
 export const storage = new MemStorage();
