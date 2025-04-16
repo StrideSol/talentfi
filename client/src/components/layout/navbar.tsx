@@ -111,10 +111,10 @@ export default function Navbar() {
             {/* Logo */}
             <div className="flex items-center">
               <Link href="/">
-                <a className="h-10 w-36 bg-white flex items-center">
+                <div className="h-10 w-36 bg-white flex items-center cursor-pointer">
                   <span className="text-[#0047FF] font-bold text-xl">YAQEEN</span>
                   <span className="text-[#2d2d2d] text-sm ml-1">INSTITUTE</span>
-                </a>
+                </div>
               </Link>
             </div>
 
@@ -130,9 +130,9 @@ export default function Navbar() {
                       {item.items.map((subItem, subIndex) => (
                         <DropdownMenuItem key={subIndex} asChild>
                           <Link href={subItem.href}>
-                            <a className="block w-full px-4 py-2 text-sm hover:bg-[#f7f7f7]">
+                            <div className="block w-full px-4 py-2 text-sm hover:bg-[#f7f7f7] cursor-pointer">
                               {subItem.title}
-                            </a>
+                            </div>
                           </Link>
                         </DropdownMenuItem>
                       ))}
@@ -140,7 +140,7 @@ export default function Navbar() {
                   </DropdownMenu>
                 ) : (
                   <Link key={index} href={item.href || "#"}>
-                    <a className="font-semibold hover:text-[#0047FF]">{item.title}</a>
+                    <div className="font-semibold hover:text-[#0047FF] cursor-pointer">{item.title}</div>
                   </Link>
                 )
               )}
@@ -173,16 +173,16 @@ export default function Navbar() {
                           <div className="pl-4 space-y-2">
                             {item.items.map((subItem, subIndex) => (
                               <Link key={subIndex} href={subItem.href}>
-                                <a className="block text-sm hover:text-[#0047FF]">
+                                <div className="block text-sm hover:text-[#0047FF] cursor-pointer">
                                   {subItem.title}
-                                </a>
+                                </div>
                               </Link>
                             ))}
                           </div>
                         </div>
                       ) : (
                         <Link key={index} href={item.href || "#"}>
-                          <a className="font-bold hover:text-[#0047FF]">{item.title}</a>
+                          <div className="font-bold hover:text-[#0047FF] cursor-pointer">{item.title}</div>
                         </Link>
                       )
                     )}
