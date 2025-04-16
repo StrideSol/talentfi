@@ -12,8 +12,8 @@ export default function FeaturedContent() {
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-2">Featured Case Studies</h2>
-          <p className="text-[#4a5568]">Discover how we've helped businesses expand globally</p>
+          <h2 className="text-3xl font-bold mb-2">How can we help you?</h2>
+          <p className="text-[#4a5568]">Discover how we've helped businesses expand into South Africa</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -74,7 +74,7 @@ export default function FeaturedContent() {
             variant="outline"
             className="inline-block bg-white border border-[#0047FF] text-[#0047FF] py-2 px-6 rounded-md font-semibold hover:bg-[#f7f7f7]"
           >
-            View All Case Studies
+            See More Services
           </Button>
         </div>
       </div>
