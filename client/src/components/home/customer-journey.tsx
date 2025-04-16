@@ -18,7 +18,7 @@ export default function CustomerJourney() {
               </div>
             </div>
             <div className="w-full md:w-5/6 md:pl-8">
-              <h3 className="text-xl font-bold text-white mb-2">Decision Stage</h3>
+              <h3 className="text-xl font-bold text-white mb-2">Engagement</h3>
               <p className="text-gray-200 mb-2">Customer books a consultation to discuss specific hiring needs.</p>
               <p className="text-gray-200">talentfi provides a tailored proposal with pricing and compliance details.</p>
             </div>
@@ -32,7 +32,7 @@ export default function CustomerJourney() {
               </div>
             </div>
             <div className="w-full md:w-5/6 md:pl-8">
-              <h3 className="text-xl font-bold text-white mb-2">Onboarding Stage</h3>
+              <h3 className="text-xl font-bold text-white mb-2">Onboarding</h3>
               <p className="text-gray-200 mb-2">Seamless setup with legal, payroll, and compliance assistance.</p>
               <p className="text-gray-200">Customer receives dedicated account manager support.</p>
             </div>
@@ -46,7 +46,7 @@ export default function CustomerJourney() {
               </div>
             </div>
             <div className="w-full md:w-5/6 md:pl-8">
-              <h3 className="text-xl font-bold text-white mb-2">Loyalty & Advocacy Stage</h3>
+              <h3 className="text-xl font-bold text-white mb-2">Joy!</h3>
               <p className="text-gray-200 mb-2">Customer experiences hassle-free hiring and payroll.</p>
               <p className="text-gray-200">Becomes a brand advocate, referring other businesses to talentfi.</p>
             </div>
