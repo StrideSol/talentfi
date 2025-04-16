@@ -27,45 +27,45 @@ const navItems = [
   {
     title: "About",
     items: [
-      { title: "Our Mission", href: "#" },
+      { title: "Our Company", href: "#" },
       { title: "Our Team", href: "#" },
       { title: "Careers", href: "#" },
     ],
   },
   {
-    title: "Research",
+    title: "Services",
     items: [
-      { title: "Publications", href: "#" },
-      { title: "Papers", href: "#" },
-      { title: "Infographics", href: "#" },
+      { title: "Global EOR Solutions", href: "#" },
+      { title: "Contractor Management", href: "#" },
+      { title: "Global Payroll", href: "#" },
     ],
   },
   {
-    title: "Topics",
+    title: "Countries",
     items: [
-      { title: "Faith", href: "#" },
-      { title: "Society", href: "#" },
-      { title: "History", href: "#" },
+      { title: "Europe", href: "#" },
+      { title: "Asia Pacific", href: "#" },
+      { title: "Americas", href: "#" },
     ],
   },
   {
-    title: "Education",
+    title: "Resources",
     items: [
-      { title: "Courses", href: "#" },
+      { title: "Guides", href: "#" },
       { title: "Webinars", href: "#" },
-      { title: "Resources", href: "#" },
+      { title: "Compliance Library", href: "#" },
     ],
   },
   {
-    title: "Media",
+    title: "Insights",
     items: [
-      { title: "Podcast", href: "#" },
-      { title: "Videos", href: "#" },
-      { title: "Interviews", href: "#" },
+      { title: "Case Studies", href: "#" },
+      { title: "Whitepapers", href: "#" },
+      { title: "Industry Reports", href: "#" },
     ],
   },
   { title: "Blog", href: "#" },
-  { title: "Events", href: "#" },
+  { title: "Contact", href: "#" },
 ];
 
 export default function Navbar() {
@@ -77,14 +77,14 @@ export default function Navbar() {
       <div className="bg-[#0047FF] text-white py-2 px-4 md:px-6">
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-sm hidden md:block">
-            Addressing the most pressing issues facing Muslims today
+            Simplifying global hiring with our industry-leading EOR solutions
           </div>
           <div className="flex space-x-4 text-sm">
             <a href="#" className="hover:underline">
-              Donate
+              Get a Quote
             </a>
             <a href="#" className="hover:underline">
-              Sign In
+              Client Portal
             </a>
             <div className="flex space-x-2">
               <a href="#" aria-label="Facebook">
@@ -111,9 +111,9 @@ export default function Navbar() {
             {/* Logo */}
             <div className="flex items-center">
               <Link href="/">
-                <div className="h-10 w-36 bg-white flex items-center cursor-pointer">
-                  <span className="text-[#0047FF] font-bold text-xl">YAQEEN</span>
-                  <span className="text-[#2d2d2d] text-sm ml-1">INSTITUTE</span>
+                <div className="h-10 w-40 bg-white flex items-center cursor-pointer">
+                  <span className="text-[#0047FF] font-bold text-xl">GLOBAL</span>
+                  <span className="text-[#2d2d2d] text-sm ml-1">EOR</span>
                 </div>
               </Link>
             </div>
@@ -188,10 +188,10 @@ export default function Navbar() {
                     )}
                     <div className="mt-4 space-y-2">
                       <Button className="w-full bg-[#0047FF] hover:bg-[#0035C8]">
-                        Donate
+                        Get a Quote
                       </Button>
                       <Button variant="outline" className="w-full border-[#0047FF] text-[#0047FF]">
-                        Sign In
+                        Client Portal
                       </Button>
                     </div>
                   </div>
@@ -218,7 +218,7 @@ export default function Navbar() {
               <input
                 type="text"
                 className="w-full py-3 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#0047FF]"
-                placeholder="Search for topics, articles, and research..."
+                placeholder="Search for EOR services, countries, and compliance guides..."
                 autoFocus
               />
               <Button className="absolute right-1 top-1 bg-[#0047FF] hover:bg-[#0035C8]">

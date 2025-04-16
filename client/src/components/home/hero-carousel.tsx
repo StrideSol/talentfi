@@ -4,32 +4,32 @@ import { Button } from "@/components/ui/button";
 const carouselData = [
   {
     id: 1,
-    title: "Islamic Scholarship for the Modern World",
-    description: "Addressing the most pressing questions through research and education.",
-    imageUrl: "https://images.unsplash.com/photo-1585036156171-384164a8c675?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    primaryButtonText: "Explore Research",
+    title: "Global Workforce Solutions",
+    description: "Expand your team internationally without establishing local entities. Our EOR services make global hiring simple and compliant.",
+    imageUrl: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    primaryButtonText: "Get Started",
     primaryButtonUrl: "#",
-    secondaryButtonText: "About Yaqeen",
+    secondaryButtonText: "How It Works",
     secondaryButtonUrl: "#",
   },
   {
     id: 2,
-    title: "Empowering Muslims Through Knowledge",
-    description: "Access research-based content to navigate contemporary challenges.",
-    imageUrl: "https://images.unsplash.com/photo-1591280063444-d3c514eb6e13?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    primaryButtonText: "View Resources",
+    title: "Compliant in 150+ Countries",
+    description: "Hire, onboard and pay employees globally with complete legal compliance in over 150 countries across six continents.",
+    imageUrl: "https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    primaryButtonText: "Country Explorer",
     primaryButtonUrl: "#",
-    secondaryButtonText: "Our Mission",
+    secondaryButtonText: "Compliance Guide",
     secondaryButtonUrl: "#",
   },
   {
     id: 3,
-    title: "Building Bridges Through Research",
-    description: "Fostering understanding through academic research and education.",
-    imageUrl: "https://images.unsplash.com/photo-1607863680198-23d4b2565df0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    primaryButtonText: "Recent Publications",
+    title: "Seamless Global Payroll",
+    description: "Manage global payroll, benefits, and taxes in multiple currencies while ensuring local compliance and employee satisfaction.",
+    imageUrl: "https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    primaryButtonText: "Payroll Solutions",
     primaryButtonUrl: "#",
-    secondaryButtonText: "Contact Us",
+    secondaryButtonText: "Request Demo",
     secondaryButtonUrl: "#",
   },
 ];
@@ -54,8 +54,8 @@ export default function HeroCarousel() {
           <div className="w-full md:w-2/3 p-6 md:p-12 flex items-center text-white">
             <div>
               <h1 className="text-3xl md:text-5xl font-bold mb-4">
-                <span className="text-white">Your</span> <span className="text-[#FF9500]">credible source</span> <span className="text-white">on</span><br/>
-                <span className="text-white">contemporary Islamic topics.</span>
+                <span className="text-white">Your</span> <span className="text-[#FF9500]">global employment</span> <span className="text-white">partner for</span><br/>
+                <span className="text-white">international expansion.</span>
               </h1>
               <p className="text-lg md:text-xl mb-8">{currentSlide.description}</p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
@@ -80,7 +80,7 @@ export default function HeroCarousel() {
           <div className="w-full md:w-1/3 bg-gray-300">
             <img
               src={currentSlide.imageUrl}
-              alt="Islamic research and education"
+              alt="Global Employer of Record services"
               className="w-full h-full object-cover"
             />
           </div>

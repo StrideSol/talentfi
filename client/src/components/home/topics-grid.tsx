@@ -13,14 +13,14 @@ import {
 
 // Fallback icons in case the data doesn't have them
 const categoryIcons: Record<string, React.ReactNode> = {
-  "faith": <BookOpen className="text-[#0047FF] h-8 w-8" />,
-  "society": <Users className="text-[#0047FF] h-8 w-8" />,
-  "history": <Landmark className="text-[#0047FF] h-8 w-8" />,
-  "law": <Scale className="text-[#0047FF] h-8 w-8" />,
-  "spirituality": <Heart className="text-[#0047FF] h-8 w-8" />,
-  "education": <GraduationCap className="text-[#0047FF] h-8 w-8" />,
-  "culture": <Globe className="text-[#0047FF] h-8 w-8" />,
-  "science": <Microscope className="text-[#0047FF] h-8 w-8" />,
+  "compliance": <Scale className="text-[#0047FF] h-8 w-8 mx-auto" />,
+  "payroll": <BookOpen className="text-[#0047FF] h-8 w-8 mx-auto" />,
+  "benefits": <Heart className="text-[#0047FF] h-8 w-8 mx-auto" />,
+  "onboarding": <Users className="text-[#0047FF] h-8 w-8 mx-auto" />,
+  "tax": <Landmark className="text-[#0047FF] h-8 w-8 mx-auto" />,
+  "visa": <GraduationCap className="text-[#0047FF] h-8 w-8 mx-auto" />,
+  "contracts": <Microscope className="text-[#0047FF] h-8 w-8 mx-auto" />,
+  "global": <Globe className="text-[#0047FF] h-8 w-8 mx-auto" />,
 };
 
 // If data isn't available, use this fallback
