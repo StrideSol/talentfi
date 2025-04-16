@@ -14,13 +14,13 @@ export default function TargetAudience() {
             
             <div className="mb-4">
               <h4 className="text-[#FF9500] font-bold mb-2">Industries:</h4>
-              <p className="text-gray-200">Technology, Finance, Digital Marketing, E-commerce, and Consulting.</p>
+              <p className="text-gray-200 font-medium">Technology, Finance, Digital Marketing, E-commerce, and Consulting.</p>
             </div>
             
 
             <div className="mb-4">
               <h4 className="text-[#FF9500] font-bold mb-2">Pain Points:</h4>
-              <ul className="text-gray-200 list-disc pl-5 space-y-2">
+              <ul className="text-gray-200 font-medium list-disc pl-5 space-y-2">
                 <li>High cost of expanding internationally.</li>
                 <li>Lack of local compliance knowledge when hiring in South Africa.</li>
                 <li>Administrative burden of payroll and tax management.</li>
@@ -29,7 +29,7 @@ export default function TargetAudience() {
             
             <div>
               <h4 className="text-[#FF9500] font-bold mb-2">How talentfi Solves Their Problems:</h4>
-              <ul className="text-gray-200 list-disc pl-5 space-y-2">
+              <ul className="text-gray-200 font-medium list-disc pl-5 space-y-2">
                 <li>Provides a cost-effective, compliant, and streamlined way to hire South African professionals without the need to set up a local entity.</li>
                 <li>Ensures full payroll, tax, and HR compliance, reducing operational risks.</li>
                 <li>Helps startups quickly scale teams without legal complications.</li>
@@ -43,13 +43,13 @@ export default function TargetAudience() {
             
             <div className="mb-4">
               <h4 className="text-[#FF9500] font-bold mb-2">Industries:</h4>
-              <p className="text-gray-200">IT, Engineering, Business Process Outsourcing (BPO), Customer Support, and Fintech.</p>
+              <p className="text-gray-200 font-medium">IT, Engineering, Business Process Outsourcing (BPO), Customer Support, and Fintech.</p>
             </div>
             
 
             <div className="mb-4">
               <h4 className="text-[#FF9500] font-bold mb-2">Pain Points:</h4>
-              <ul className="text-gray-200 list-disc pl-5 space-y-2">
+              <ul className="text-gray-200 font-medium list-disc pl-5 space-y-2">
                 <li>Challenges in navigating South African labor laws and tax structures.</li>
                 <li>Ensuring cost-effective yet high-quality workforce expansion.</li>
                 <li>The need for a reliable, fast, and scalable hiring solution.</li>
@@ -58,7 +58,7 @@ export default function TargetAudience() {
             
             <div>
               <h4 className="text-[#FF9500] font-bold mb-2">How talentfi Solves Their Problems:</h4>
-              <ul className="text-gray-200 list-disc pl-5 space-y-2">
+              <ul className="text-gray-200 font-medium list-disc pl-5 space-y-2">
                 <li>Offers an Employee of Record (EOR) solution that eliminates the need for legal entity setup.</li>
                 <li>Provides access to a skilled workforce at a lower cost than hiring in Europe or North America.</li>
                 <li>Ensures seamless onboarding, payroll, and contract management for large teams.</li>
