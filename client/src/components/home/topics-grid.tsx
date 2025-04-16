@@ -13,73 +13,73 @@ import {
 
 // Fallback icons in case the data doesn't have them
 const categoryIcons: Record<string, React.ReactNode> = {
-  "compliance": <Scale className="text-[#0047FF] h-8 w-8 mx-auto" />,
-  "payroll": <BookOpen className="text-[#0047FF] h-8 w-8 mx-auto" />,
-  "benefits": <Heart className="text-[#0047FF] h-8 w-8 mx-auto" />,
+  "sa-compliance": <Scale className="text-[#0047FF] h-8 w-8 mx-auto" />,
+  "sa-payroll": <BookOpen className="text-[#0047FF] h-8 w-8 mx-auto" />,
+  "bee": <Heart className="text-[#0047FF] h-8 w-8 mx-auto" />,
   "onboarding": <Users className="text-[#0047FF] h-8 w-8 mx-auto" />,
-  "tax": <Landmark className="text-[#0047FF] h-8 w-8 mx-auto" />,
-  "visa": <GraduationCap className="text-[#0047FF] h-8 w-8 mx-auto" />,
-  "contracts": <Microscope className="text-[#0047FF] h-8 w-8 mx-auto" />,
-  "global": <Globe className="text-[#0047FF] h-8 w-8 mx-auto" />,
+  "sa-tax": <Landmark className="text-[#0047FF] h-8 w-8 mx-auto" />,
+  "sa-visa": <GraduationCap className="text-[#0047FF] h-8 w-8 mx-auto" />,
+  "sa-contracts": <Microscope className="text-[#0047FF] h-8 w-8 mx-auto" />,
+  "sa-market": <Globe className="text-[#0047FF] h-8 w-8 mx-auto" />,
 };
 
 // If data isn't available, use this fallback
 const fallbackTopics = [
   {
     id: 1,
-    name: "Global Compliance",
-    slug: "compliance",
-    icon: "compliance",
-    description: "Stay compliant with employment laws worldwide",
+    name: "South African Compliance",
+    slug: "sa-compliance",
+    icon: "sa-compliance",
+    description: "Stay compliant with South African employment laws and regulations",
   },
   {
     id: 2,
-    name: "Payroll Management",
-    slug: "payroll",
-    icon: "payroll",
-    description: "Process payroll in multiple currencies and jurisdictions",
+    name: "SA Payroll Management",
+    slug: "sa-payroll",
+    icon: "sa-payroll",
+    description: "Process payroll, UIF, and tax filing in South Africa",
   },
   {
     id: 3,
-    name: "Benefits Administration",
-    slug: "benefits",
-    icon: "benefits",
-    description: "Manage competitive benefits packages for global teams",
+    name: "BEE Compliance",
+    slug: "bee",
+    icon: "bee",
+    description: "Navigate Broad-Based Black Economic Empowerment requirements",
   },
   {
     id: 4,
     name: "Employee Onboarding",
     slug: "onboarding",
     icon: "onboarding",
-    description: "Streamlined hiring and onboarding for international employees",
+    description: "Streamlined hiring and onboarding for employees in South Africa",
   },
   {
     id: 5,
-    name: "Tax Management",
-    slug: "tax",
-    icon: "tax",
-    description: "Navigate complex international tax requirements",
+    name: "South African Tax",
+    slug: "sa-tax",
+    icon: "sa-tax",
+    description: "Navigate South African tax requirements for employers",
   },
   {
     id: 6,
-    name: "Visa & Immigration",
-    slug: "visa",
-    icon: "visa",
-    description: "Simplify work permits and visa application processes",
+    name: "Work Visas for SA",
+    slug: "sa-visa",
+    icon: "sa-visa",
+    description: "Simplify work permits and visa applications for South Africa",
   },
   {
     id: 7,
-    name: "Employment Contracts",
-    slug: "contracts",
-    icon: "contracts",
-    description: "Legally-compliant employment agreements for all jurisdictions",
+    name: "SA Employment Contracts",
+    slug: "sa-contracts",
+    icon: "sa-contracts",
+    description: "Legally-compliant employment agreements for South Africa",
   },
   {
     id: 8,
-    name: "Global Expansion",
-    slug: "global",
-    icon: "global",
-    description: "Strategic guidance for entering new international markets",
+    name: "South African Market Entry",
+    slug: "sa-market",
+    icon: "sa-market",
+    description: "Strategic guidance for entering the South African market",
   },
 ];
 
@@ -95,8 +95,8 @@ export default function TopicsGrid() {
     <section className="py-12 bg-[#f7f7f7]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-2">Our EOR Services</h2>
-          <p className="text-[#4a5568]">Explore our comprehensive global employment solutions</p>
+          <h2 className="text-3xl font-bold mb-2">Our South African EOR Services</h2>
+          <p className="text-[#4a5568]">Explore our comprehensive South African employment solutions</p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

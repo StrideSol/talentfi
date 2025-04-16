@@ -50,17 +50,28 @@ export class MemStorage implements IStorage {
     // Initialize with mock data
     this.categories = mockCategories.map((cat, index) => ({
       ...cat,
-      id: index + 1
+      id: index + 1,
+      icon: cat.icon || null,
+      description: cat.description || null
     }));
     
     this.content = mockContent.map((cont, index) => ({
       ...cont,
-      id: index + 1
+      id: index + 1,
+      content: cont.content || null,
+      excerpt: cont.excerpt || null,
+      imageUrl: cont.imageUrl || null,
+      author: cont.author || null,
+      readTime: cont.readTime || null,
+      publishedAt: cont.publishedAt || null
     }));
     
     this.events = mockEvents.map((event, index) => ({
       ...event,
-      id: index + 1
+      id: index + 1,
+      description: event.description || null,
+      location: event.location || null,
+      registrationUrl: event.registrationUrl || null
     }));
   }
 

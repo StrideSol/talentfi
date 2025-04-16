@@ -13,121 +13,121 @@ import {
 // Mock Categories Data
 export const mockCategories: InsertContentCategory[] = [
   {
-    name: "Global Compliance",
-    slug: "compliance",
+    name: "South African Compliance",
+    slug: "sa-compliance",
     icon: "scale",
-    description: "Stay compliant with employment laws worldwide"
+    description: "Stay compliant with South African employment laws and regulations"
   },
   {
-    name: "Payroll Management",
-    slug: "payroll",
+    name: "SA Payroll Management",
+    slug: "sa-payroll",
     icon: "book-open",
-    description: "Process payroll in multiple currencies and jurisdictions"
+    description: "Process payroll, UIF, and tax filing in South Africa"
   },
   {
-    name: "Benefits Administration",
-    slug: "benefits",
+    name: "BEE Compliance",
+    slug: "bee",
     icon: "heart",
-    description: "Manage competitive benefits packages for global teams"
+    description: "Navigate Broad-Based Black Economic Empowerment requirements"
   },
   {
     name: "Employee Onboarding",
     slug: "onboarding",
     icon: "users",
-    description: "Streamlined hiring and onboarding for international employees"
+    description: "Streamlined hiring and onboarding for employees in South Africa"
   },
   {
-    name: "Tax Management",
-    slug: "tax",
+    name: "South African Tax",
+    slug: "sa-tax",
     icon: "landmark",
-    description: "Navigate complex international tax requirements"
+    description: "Navigate South African tax requirements for employers"
   },
   {
-    name: "Visa & Immigration",
-    slug: "visa",
+    name: "Work Visas for SA",
+    slug: "sa-visa",
     icon: "graduation-cap",
-    description: "Simplify work permits and visa application processes"
+    description: "Simplify work permits and visa applications for South Africa"
   },
   {
-    name: "Employment Contracts",
-    slug: "contracts",
+    name: "SA Employment Contracts",
+    slug: "sa-contracts",
     icon: "microscope",
-    description: "Legally-compliant employment agreements for all jurisdictions"
+    description: "Legally-compliant employment agreements for South Africa"
   },
   {
-    name: "Global Expansion",
-    slug: "global",
+    name: "South African Market Entry",
+    slug: "sa-market",
     icon: "globe",
-    description: "Strategic guidance for entering new international markets"
+    description: "Strategic guidance for entering the South African market"
   }
 ];
 
 // Mock Content Data
 export const mockContent: InsertContent[] = [
   {
-    title: "Navigating US Labor Laws When Hiring Remotely",
-    slug: "navigating-us-labor-laws",
-    excerpt: "A comprehensive guide to understanding US employment regulations when hiring remote workers.",
+    title: "Navigating South African Labor Laws When Hiring Remotely",
+    slug: "sa-labor-laws",
+    excerpt: "A comprehensive guide to understanding South African employment regulations for international companies.",
     content: "Full content would go here...",
-    imageUrl: "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    author: "Sarah Johnson",
+    imageUrl: "https://images.unsplash.com/photo-1577538928305-3807c3993047?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    author: "Thabo Mbeki",
     readTime: 15,
-    categoryId: 1, // Compliance
+    categoryId: 1, // SA Compliance
     contentType: "article",
     publishedAt: new Date("2023-04-15")
   },
   {
-    title: "Global Expansion: European Market Entry Strategy",
-    slug: "european-market-entry-strategy",
-    excerpt: "Key insights for companies looking to expand their operations into European markets.",
+    title: "Entering the South African Market: Strategy Guide",
+    slug: "sa-market-entry-strategy",
+    excerpt: "Key insights for companies looking to expand their operations into South Africa.",
     content: "Full content would go here...",
-    imageUrl: "https://images.unsplash.com/photo-1591280063444-d3c514eb6e13?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    author: "Michael Chen",
+    imageUrl: "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    author: "Sarah Johnson",
     readTime: 20,
-    categoryId: 8, // Global Expansion
+    categoryId: 8, // SA Market Entry
     contentType: "article",
     publishedAt: new Date("2023-03-28")
   },
   {
-    title: "Benefits Packages That Attract Global Talent",
-    slug: "global-benefits-packages",
-    excerpt: "How to structure competitive benefits offerings that appeal to international employees.",
+    title: "BEE Compliance for Foreign Companies",
+    slug: "bee-for-foreign-companies",
+    excerpt: "How to navigate Broad-Based Black Economic Empowerment requirements as a foreign entity.",
     content: "Full content would go here...",
-    imageUrl: "https://images.unsplash.com/photo-1607863680198-23d4b2565df0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    author: "Elena Rodriguez",
+    imageUrl: "https://images.unsplash.com/photo-1576485375217-d6a95e34d041?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    author: "Nomsa Dlamini",
     readTime: 12,
-    categoryId: 3, // Benefits
+    categoryId: 3, // BEE Compliance
     contentType: "article",
     publishedAt: new Date("2023-04-02")
   },
   {
-    title: "Streamlining International Payroll Operations",
-    slug: "international-payroll-operations",
-    excerpt: "Best practices for managing payroll across multiple countries and currencies.",
+    title: "South African Payroll: UIF, PAYE and Tax Filing",
+    slug: "sa-payroll-guide",
+    excerpt: "Best practices for managing payroll and mandatory deductions in South Africa.",
     content: "Full content would go here...",
     imageUrl: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    author: "David Kim",
+    author: "David Mabaso",
     readTime: 18,
-    categoryId: 2, // Payroll
+    categoryId: 2, // SA Payroll
     contentType: "publication",
     publishedAt: new Date("2023-04-10")
   },
   {
-    title: "Tax Compliance for Remote Global Teams",
-    slug: "tax-compliance-remote-teams",
-    excerpt: "Understanding the complex tax implications when employing distributed teams across borders.",
+    title: "Tax Compliance for South African Remote Teams",
+    slug: "sa-tax-compliance",
+    excerpt: "Understanding South African tax implications when employing remote workers.",
     content: "Full content would go here...",
     imageUrl: "https://images.unsplash.com/photo-1590076215667-875d3c33b438?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     author: "Rachel Thompson",
     readTime: 15,
-    categoryId: 5, // Tax Management
+    categoryId: 5, // SA Tax
     contentType: "publication",
     publishedAt: new Date("2023-03-30")
   },
   {
-    title: "Digital Onboarding Processes for Global Hires",
-    slug: "digital-onboarding-global-hires",
-    excerpt: "Creating effective remote onboarding experiences for international employees.",
+    title: "Digital Onboarding Processes for South African Hires",
+    slug: "sa-digital-onboarding",
+    excerpt: "Creating effective remote onboarding experiences for South African employees.",
     content: "Full content would go here...",
     imageUrl: "https://images.unsplash.com/photo-1584037018612-812b569c7f9f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     author: "Thomas Wilson",
@@ -137,50 +137,50 @@ export const mockContent: InsertContent[] = [
     publishedAt: new Date("2023-03-25")
   },
   {
-    title: "UK Employment Guide 2023",
-    slug: "uk-employment-guide",
-    excerpt: "Essential information for employers hiring in the United Kingdom",
+    title: "South African Employment Guide 2023",
+    slug: "sa-employment-guide",
+    excerpt: "Essential information for employers hiring in South Africa",
     content: "Full content would go here...",
-    imageUrl: "https://images.unsplash.com/photo-1588580000645-5e582b74e0c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1576485375217-d6a95e34d041?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     author: "Emma Phillips",
     readTime: 30,
-    categoryId: 1, // Compliance
+    categoryId: 1, // SA Compliance
     contentType: "resource",
     publishedAt: new Date("2023-02-15")
   },
   {
-    title: "Singapore Employment Regulations",
-    slug: "singapore-employment-regulations",
-    excerpt: "Complete guide to hiring, managing, and compensating employees in Singapore",
+    title: "Johannesburg & Cape Town Regional Guide",
+    slug: "joburg-capetown-guide",
+    excerpt: "Complete guide to hiring, managing, and compensating employees in South Africa's main business centers",
     content: "Full content would go here...",
-    imageUrl: "https://images.unsplash.com/photo-1519791883288-dc8bd696e667?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    author: "Li Wei",
+    imageUrl: "https://images.unsplash.com/photo-1580746738099-78c8abc74942?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    author: "Sipho Nkosi",
     readTime: 25,
-    categoryId: 1, // Compliance
+    categoryId: 1, // SA Compliance
     contentType: "resource",
     publishedAt: new Date("2023-02-01")
   },
   {
-    title: "Employment Contract Templates by Country",
-    slug: "contract-templates-by-country",
-    excerpt: "Customizable and compliant employment agreement templates for major global markets",
+    title: "South African Employment Contract Templates",
+    slug: "sa-contract-templates",
+    excerpt: "Customizable and compliant employment agreement templates for South Africa",
     content: "Full content would go here...",
     imageUrl: "https://images.unsplash.com/photo-1612599316791-451087c7fe15?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     author: "Sophia Martinez",
     readTime: 20,
-    categoryId: 7, // Contracts
+    categoryId: 7, // SA Contracts
     contentType: "resource",
     publishedAt: new Date("2023-03-10")
   },
   {
-    title: "International Work Visa Guide",
-    slug: "international-work-visa-guide",
-    excerpt: "Processing requirements and timelines for work permits across major economies",
+    title: "South African Work Visa Guide",
+    slug: "sa-work-visa-guide",
+    excerpt: "Processing requirements and timelines for work permits in South Africa",
     content: "Full content would go here...",
     imageUrl: "https://images.unsplash.com/photo-1597007030739-6d2e7172e222?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     author: "James Anderson",
     readTime: 28,
-    categoryId: 6, // Visa
+    categoryId: 6, // SA Visa
     contentType: "resource",
     publishedAt: new Date("2023-01-20")
   }
@@ -189,17 +189,17 @@ export const mockContent: InsertContent[] = [
 // Mock Events Data
 export const mockEvents: InsertEvent[] = [
   {
-    title: "Global Payroll Compliance Webinar 2023",
-    description: "Learn about the latest international payroll regulations and how to maintain compliance across multiple jurisdictions.",
+    title: "South African Payroll Compliance Webinar 2023",
+    description: "Learn about the latest South African payroll regulations and how to maintain compliance with local labor laws.",
     eventDate: new Date("2023-05-15"),
-    location: "Online Webinar",
-    registrationUrl: "https://example.com/register/payroll-compliance-webinar"
+    location: "Johannesburg & Online",
+    registrationUrl: "https://example.com/register/sa-payroll-compliance-webinar"
   },
   {
-    title: "Expanding to Europe: Legal and HR Considerations",
-    description: "Join our panel of experts to discuss the key legal and HR challenges when establishing operations in European markets.",
+    title: "BEE Certification Workshop",
+    description: "Join our panel of experts to discuss the key requirements and benefits of BEE certification for companies operating in South Africa.",
     eventDate: new Date("2023-06-22"),
-    location: "London & Online",
-    registrationUrl: "https://example.com/register/europe-expansion-webinar"
+    location: "Cape Town & Online",
+    registrationUrl: "https://example.com/register/bee-certification-workshop"
   }
 ];

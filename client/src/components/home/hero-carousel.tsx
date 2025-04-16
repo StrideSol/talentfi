@@ -80,7 +80,7 @@ export default function HeroCarousel() {
           <div className="w-full md:w-1/3 bg-gray-300">
             <img
               src={currentSlide.imageUrl}
-              alt="Global Employer of Record services"
+              alt="South African Employer of Record services"
               className="w-full h-full object-cover"
             />
           </div>
