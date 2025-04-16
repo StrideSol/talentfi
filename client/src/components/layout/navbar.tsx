@@ -77,7 +77,7 @@ export default function Navbar() {
       <div className="bg-[#0047FF] text-white py-2 px-4 md:px-6">
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-sm hidden md:block">
-            South Africa's premier Employer of Record solution for international businesses
+            South Africa's premier Employer of Record solution
           </div>
           <div className="flex space-x-4 text-sm">
             <a href="#" className="hover:underline">
