@@ -4,11 +4,13 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
+import CarouselAdmin from "@/pages/admin/carousel";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/admin/carousel" component={CarouselAdmin} />
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>

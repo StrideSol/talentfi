@@ -7,19 +7,22 @@ import { type CarouselSlide } from "@shared/schema";
 export default function HeroCarousel() {
   const [activeSlide, setActiveSlide] = useState(0);
   
-  const { data: carouselSlides, isLoading, error } = useQuery<CarouselSlide[]>({
+  const { data: slides, isLoading, error } = useQuery<CarouselSlide[]>({
     queryKey: ['/api/carousel'],
     refetchOnWindowFocus: false,
   });
 
+  // Filter active slides
+  const activeSlides = slides?.filter(slide => slide.isActive) || [];
+
   useEffect(() => {
-    if (!carouselSlides || carouselSlides.length === 0) return;
+    if (!activeSlides.length) return;
     
     const interval = setInterval(() => {
-      setActiveSlide((prev) => (prev + 1) % carouselSlides.length);
+      setActiveSlide((prev) => (prev + 1) % activeSlides.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, [carouselSlides]);
+  }, [activeSlides.length]);
   
   // Handle loading state
   if (isLoading) {
@@ -31,7 +34,7 @@ export default function HeroCarousel() {
   }
   
   // Handle error or no data
-  if (error || !carouselSlides || carouselSlides.length === 0) {
+  if (error || !activeSlides.length) {
     const defaultSlide = {
       id: 1,
       title: "South Africa's Premier EOR Solution",
@@ -86,15 +89,16 @@ export default function HeroCarousel() {
               />
             </div>
           </div>
-
-          {/* No Carousel Indicators for single slide */}
         </div>
       </div>
     );
   }
   
-  // Get the current slide based on activeSlide index
-  const currentSlide = carouselSlides[activeSlide];
+  // Sort slides by order
+  const sortedSlides = [...activeSlides].sort((a, b) => a.order - b.order);
+  
+  // Get the current slide
+  const currentSlide = sortedSlides[activeSlide];
 
   return (
     <div className="relative bg-[#0047FF]">
@@ -137,20 +141,22 @@ export default function HeroCarousel() {
         </div>
 
         {/* Carousel Indicators */}
-        <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
-          {carouselSlides.map((_, index: number) => (
-            <button
-              key={index}
-              onClick={() => setActiveSlide(index)}
-              className={`h-2 rounded-full transition-all ${
-                index === activeSlide
-                  ? "w-8 bg-[#FF9500]"
-                  : "w-2 bg-white hover:bg-[#FF9500]"
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
+        {sortedSlides.length > 1 && (
+          <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+            {sortedSlides.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setActiveSlide(index)}
+                className={`h-2 rounded-full transition-all ${
+                  index === activeSlide
+                    ? "w-8 bg-[#FF9500]"
+                    : "w-2 bg-white hover:bg-[#FF9500]"
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

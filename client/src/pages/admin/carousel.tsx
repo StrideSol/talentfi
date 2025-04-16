@@ -52,7 +52,7 @@ export default function CarouselAdmin() {
   // Create a new slide
   const createSlideMutation = useMutation({
     mutationFn: async (formData: FormData) => {
-      const response = await apiRequest("POST", "/api/carousel", formData, true);
+      const response = await apiRequest("POST", "/api/carousel", formData, true as any);
       return await response.json();
     },
     onSuccess: () => {
@@ -76,7 +76,7 @@ export default function CarouselAdmin() {
   // Update a slide
   const updateSlideMutation = useMutation({
     mutationFn: async ({ id, formData }: { id: number; formData: FormData }) => {
-      const response = await apiRequest("PUT", `/api/carousel/${id}`, formData, true);
+      const response = await apiRequest("PUT", `/api/carousel/${id}`, formData, true as any);
       return await response.json();
     },
     onSuccess: () => {
