@@ -17,11 +17,7 @@ export default function TargetAudience() {
               <p className="text-gray-200">Technology, Finance, Digital Marketing, E-commerce, and Consulting.</p>
             </div>
             
-            <div className="mb-4 bg-[#0d1e4e] p-3 rounded-md">
-              <h4 className="text-[#FF9500] font-bold mb-2">Key Decision-Makers:</h4>
-              <p className="text-gray-200">Founders, CEOs, HR Managers, and Operations Heads.</p>
-            </div>
-            
+
             <div className="mb-4">
               <h4 className="text-[#FF9500] font-bold mb-2">Pain Points:</h4>
               <ul className="text-gray-200 list-disc pl-5 space-y-2">
@@ -50,11 +46,7 @@ export default function TargetAudience() {
               <p className="text-gray-200">IT, Engineering, Business Process Outsourcing (BPO), Customer Support, and Fintech.</p>
             </div>
             
-            <div className="mb-4 bg-[#0d1e4e] p-3 rounded-md">
-              <h4 className="text-[#FF9500] font-bold mb-2">Key Decision-Makers:</h4>
-              <p className="text-gray-200">CHROs (Chief Human Resource Officers), HR Directors, Talent Acquisition Leads, and CFOs.</p>
-            </div>
-            
+
             <div className="mb-4">
               <h4 className="text-[#FF9500] font-bold mb-2">Pain Points:</h4>
               <ul className="text-gray-200 list-disc pl-5 space-y-2">
