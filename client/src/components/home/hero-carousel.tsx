@@ -54,8 +54,8 @@ export default function HeroCarousel() {
           <div className="w-full md:w-2/3 p-6 md:p-12 flex items-center text-white">
             <div>
               <h1 className="text-3xl md:text-5xl font-bold mb-4">
-                <span className="text-white">South Africa's premier</span> <span className="text-[#FF9500]">Employee of</span><br/>
-                <span className="text-white"><span className="text-[#FF9500]">Record</span> solution</span>
+                <span className="text-white">South Africa's premier</span> <span className="text-[#FF9500] font-bold">Employee of Record</span><br/>
+                <span className="text-white">solution</span>
               </h1>
               <p className="text-lg md:text-xl mb-8">{currentSlide.description}</p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
