@@ -59,7 +59,7 @@ export default function TargetAudience() {
             <div>
               <h4 className="text-[#FF9500] font-bold mb-2">How Talentfi Solves Their Problems:</h4>
               <ul className="text-gray-200 list-disc pl-5 space-y-2">
-                <li>Offers an Employer of Record (EOR) solution that eliminates the need for legal entity setup.</li>
+                <li>Offers an Employee of Record (EOR) solution that eliminates the need for legal entity setup.</li>
                 <li>Provides access to a skilled workforce at a lower cost than hiring in Europe or North America.</li>
                 <li>Ensures seamless onboarding, payroll, and contract management for large teams.</li>
               </ul>

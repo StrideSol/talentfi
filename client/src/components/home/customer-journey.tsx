@@ -19,7 +19,7 @@ export default function CustomerJourney() {
             </div>
             <div className="w-full md:w-5/6 md:pl-8">
               <h3 className="text-xl font-bold text-white mb-2">Awareness Stage</h3>
-              <p className="text-gray-200 mb-2">Customer discovers Talentfi through LinkedIn, industry blogs, or word-of-mouth referrals.</p>
+              <p className="text-gray-200 mb-2">Customer discovers talentfi through LinkedIn, industry blogs, or word-of-mouth referrals.</p>
               <p className="text-gray-200">Pain points identified: High recruitment costs, complex compliance issues.</p>
             </div>
           </div>
@@ -33,7 +33,7 @@ export default function CustomerJourney() {
             </div>
             <div className="w-full md:w-5/6 md:pl-8">
               <h3 className="text-xl font-bold text-white mb-2">Consideration Stage</h3>
-              <p className="text-gray-200 mb-2">Customer explores Talentfi's website, reads case studies, and watches informational videos.</p>
+              <p className="text-gray-200 mb-2">Customer explores talentfi's website, reads case studies, and watches informational videos.</p>
               <p className="text-gray-200">Downloads a free guide on international hiring compliance.</p>
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function CustomerJourney() {
             <div className="w-full md:w-5/6 md:pl-8">
               <h3 className="text-xl font-bold text-white mb-2">Decision Stage</h3>
               <p className="text-gray-200 mb-2">Customer books a consultation to discuss specific hiring needs.</p>
-              <p className="text-gray-200">Talentfi provides a tailored proposal with pricing and compliance details.</p>
+              <p className="text-gray-200">talentfi provides a tailored proposal with pricing and compliance details.</p>
             </div>
           </div>
 
