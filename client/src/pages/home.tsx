@@ -2,7 +2,7 @@ import HeroCarousel from "@/components/home/hero-carousel";
 import FeaturedContent from "@/components/home/featured-content";
 import TopicsGrid from "@/components/home/topics-grid";
 import LatestPublications from "@/components/home/latest-publications";
-import EducationalResources from "@/components/home/educational-resources";
+import CustomerJourney from "@/components/home/customer-journey";
 import NewsletterSignup from "@/components/home/newsletter-signup";
 import UpcomingEvents from "@/components/home/upcoming-events";
 
@@ -13,7 +13,7 @@ export default function Home() {
       <FeaturedContent />
       <TopicsGrid />
       <LatestPublications />
-      <EducationalResources />
+      <CustomerJourney />
       <NewsletterSignup />
       <UpcomingEvents />
     </div>
