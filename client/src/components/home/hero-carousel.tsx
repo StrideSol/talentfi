@@ -5,7 +5,7 @@ const carouselData = [
   {
     id: 1,
     title: "South African Workforce Solutions",
-    description: "Expand your team into South Africa without establishing a local entity. Our EOR services make hiring in South Africa simple and compliant.",
+    description: "Your trusted South African employment partner. Our local EOR services make hiring in South Africa simple and fully compliant.",
     imageUrl: "https://images.unsplash.com/photo-1576485375217-d6a95e34d041?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     primaryButtonText: "Get Started",
     primaryButtonUrl: "#",
@@ -54,8 +54,8 @@ export default function HeroCarousel() {
           <div className="w-full md:w-2/3 p-6 md:p-12 flex items-center text-white">
             <div>
               <h1 className="text-3xl md:text-5xl font-bold mb-4">
-                <span className="text-white">Your</span> <span className="text-[#FF9500]">South African</span> <span className="text-white">employment</span><br/>
-                <span className="text-white">partner for global businesses.</span>
+                <span className="text-white">South Africa's premier</span> <span className="text-[#FF9500]">Employee of</span><br/>
+                <span className="text-white">Record solution</span>
               </h1>
               <p className="text-lg md:text-xl mb-8">{currentSlide.description}</p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
