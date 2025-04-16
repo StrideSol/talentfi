@@ -111,9 +111,10 @@ export default function Navbar() {
             {/* Logo */}
             <div className="flex items-center">
               <Link href="/">
-                <div className="h-10 w-40 bg-white flex items-center cursor-pointer">
+                <div className="h-10 w-48 bg-white flex items-center cursor-pointer">
                   <span className="text-[#0047FF] font-bold text-xl">talent</span>
                   <span className="text-[#FF9500] font-bold text-xl">fi</span>
+                  <span className="text-white font-bold text-xs ml-1 bg-[#0047FF] px-2 py-0.5 rounded-md tracking-wide">EOR</span>
                 </div>
               </Link>
             </div>
