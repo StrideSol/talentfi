@@ -1,4 +1,4 @@
-import { Check, Eye, Search, Rocket, Heart, ClipboardCheck } from "lucide-react";
+import { Rocket, Heart, ClipboardCheck } from "lucide-react";
 
 export default function CustomerJourney() {
   return (
@@ -14,34 +14,6 @@ export default function CustomerJourney() {
           <div className="flex flex-col md:flex-row mb-8 items-start">
             <div className="w-full md:w-1/6 flex justify-center mb-4 md:mb-0">
               <div className="bg-[#2f1b75] p-6 rounded-lg shadow-lg border-l-4 border-[#FF9500]">
-                <Eye className="w-8 h-8 text-white" />
-              </div>
-            </div>
-            <div className="w-full md:w-5/6 md:pl-8">
-              <h3 className="text-xl font-bold text-white mb-2">Awareness Stage</h3>
-              <p className="text-gray-200 mb-2">Customer discovers talentfi through LinkedIn, industry blogs, or word-of-mouth referrals.</p>
-              <p className="text-gray-200">Pain points identified: High recruitment costs, complex compliance issues.</p>
-            </div>
-          </div>
-
-          {/* Journey Step 2 */}
-          <div className="flex flex-col md:flex-row mb-8 items-start">
-            <div className="w-full md:w-1/6 flex justify-center mb-4 md:mb-0">
-              <div className="bg-[#2f1b75] p-6 rounded-lg shadow-lg border-l-4 border-[#FF9500]">
-                <Search className="w-8 h-8 text-white" />
-              </div>
-            </div>
-            <div className="w-full md:w-5/6 md:pl-8">
-              <h3 className="text-xl font-bold text-white mb-2">Consideration Stage</h3>
-              <p className="text-gray-200 mb-2">Customer explores talentfi's website, reads case studies, and watches informational videos.</p>
-              <p className="text-gray-200">Downloads a free guide on South African hiring and labor compliance.</p>
-            </div>
-          </div>
-
-          {/* Journey Step 3 */}
-          <div className="flex flex-col md:flex-row mb-8 items-start">
-            <div className="w-full md:w-1/6 flex justify-center mb-4 md:mb-0">
-              <div className="bg-[#2f1b75] p-6 rounded-lg shadow-lg border-l-4 border-[#FF9500]">
                 <ClipboardCheck className="w-8 h-8 text-white" />
               </div>
             </div>
@@ -52,7 +24,7 @@ export default function CustomerJourney() {
             </div>
           </div>
 
-          {/* Journey Step 4 */}
+          {/* Journey Step 2 */}
           <div className="flex flex-col md:flex-row mb-8 items-start">
             <div className="w-full md:w-1/6 flex justify-center mb-4 md:mb-0">
               <div className="bg-[#2f1b75] p-6 rounded-lg shadow-lg border-l-4 border-[#FF9500]">
@@ -66,7 +38,7 @@ export default function CustomerJourney() {
             </div>
           </div>
 
-          {/* Journey Step 5 */}
+          {/* Journey Step 3 */}
           <div className="flex flex-col md:flex-row items-start">
             <div className="w-full md:w-1/6 flex justify-center mb-4 md:mb-0">
               <div className="bg-[#2f1b75] p-6 rounded-lg shadow-lg border-l-4 border-[#FF9500]">
