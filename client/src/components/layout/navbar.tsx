@@ -74,7 +74,7 @@ export default function Navbar() {
   return (
     <header className="w-full">
       {/* Top Bar */}
-      <div className="bg-[#00b0b9] text-white py-2 px-4 md:px-6">
+      <div className="bg-[#0047FF] text-white py-2 px-4 md:px-6">
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-sm hidden md:block">
             Addressing the most pressing issues facing Muslims today
@@ -112,7 +112,7 @@ export default function Navbar() {
             <div className="flex items-center">
               <Link href="/">
                 <a className="h-10 w-36 bg-white flex items-center">
-                  <span className="text-[#00b0b9] font-bold text-xl">YAQEEN</span>
+                  <span className="text-[#0047FF] font-bold text-xl">YAQEEN</span>
                   <span className="text-[#2d2d2d] text-sm ml-1">INSTITUTE</span>
                 </a>
               </Link>
@@ -123,7 +123,7 @@ export default function Navbar() {
               {navItems.map((item, index) => 
                 item.items ? (
                   <DropdownMenu key={index}>
-                    <DropdownMenuTrigger className="font-semibold hover:text-[#00b0b9] flex items-center">
+                    <DropdownMenuTrigger className="font-semibold hover:text-[#0047FF] flex items-center">
                       {item.title} <ChevronDown className="ml-1 h-4 w-4" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="center" className="w-48">
@@ -140,7 +140,7 @@ export default function Navbar() {
                   </DropdownMenu>
                 ) : (
                   <Link key={index} href={item.href || "#"}>
-                    <a className="font-semibold hover:text-[#00b0b9]">{item.title}</a>
+                    <a className="font-semibold hover:text-[#0047FF]">{item.title}</a>
                   </Link>
                 )
               )}
@@ -150,7 +150,7 @@ export default function Navbar() {
             <div className="flex items-center">
               <IconButton 
                 onClick={() => setIsSearchOpen(!isSearchOpen)} 
-                className="text-[#2d2d2d] p-2 hover:text-[#00b0b9]"
+                className="text-[#2d2d2d] p-2 hover:text-[#0047FF]"
                 aria-label="Search"
               >
                 <Search size={20} />
@@ -158,7 +158,7 @@ export default function Navbar() {
               <Sheet>
                 <SheetTrigger asChild>
                   <IconButton 
-                    className="text-[#2d2d2d] p-2 hover:text-[#00b0b9] lg:hidden"
+                    className="text-[#2d2d2d] p-2 hover:text-[#0047FF] lg:hidden"
                     aria-label="Menu"
                   >
                     <Menu size={20} />
@@ -173,7 +173,7 @@ export default function Navbar() {
                           <div className="pl-4 space-y-2">
                             {item.items.map((subItem, subIndex) => (
                               <Link key={subIndex} href={subItem.href}>
-                                <a className="block text-sm hover:text-[#00b0b9]">
+                                <a className="block text-sm hover:text-[#0047FF]">
                                   {subItem.title}
                                 </a>
                               </Link>
@@ -182,15 +182,15 @@ export default function Navbar() {
                         </div>
                       ) : (
                         <Link key={index} href={item.href || "#"}>
-                          <a className="font-bold hover:text-[#00b0b9]">{item.title}</a>
+                          <a className="font-bold hover:text-[#0047FF]">{item.title}</a>
                         </Link>
                       )
                     )}
                     <div className="mt-4 space-y-2">
-                      <Button className="w-full bg-[#00b0b9] hover:bg-[#00a0a8]">
+                      <Button className="w-full bg-[#0047FF] hover:bg-[#0035C8]">
                         Donate
                       </Button>
-                      <Button variant="outline" className="w-full border-[#00b0b9] text-[#00b0b9]">
+                      <Button variant="outline" className="w-full border-[#0047FF] text-[#0047FF]">
                         Sign In
                       </Button>
                     </div>
