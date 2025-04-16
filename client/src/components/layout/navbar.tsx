@@ -217,11 +217,11 @@ export default function Navbar() {
             <div className="relative">
               <input
                 type="text"
-                className="w-full py-3 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00b0b9]"
+                className="w-full py-3 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#0047FF]"
                 placeholder="Search for topics, articles, and research..."
                 autoFocus
               />
-              <Button className="absolute right-1 top-1 bg-[#00b0b9] hover:bg-[#00a0a8]">
+              <Button className="absolute right-1 top-1 bg-[#0047FF] hover:bg-[#0035C8]">
                 <Search className="h-5 w-5" />
               </Button>
             </div>

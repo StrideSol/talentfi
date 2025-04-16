@@ -57,14 +57,14 @@ export default function HeroCarousel() {
               <p className="text-lg md:text-xl mb-8">{currentSlide.description}</p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                 <Button
-                  className="bg-[#00b0b9] hover:bg-opacity-90 text-white py-3 px-6 rounded-md font-semibold"
+                  className="bg-[#0047FF] hover:bg-[#0035C8] text-white py-3 px-6 rounded-md font-semibold"
                   asChild
                 >
                   <a href={currentSlide.primaryButtonUrl}>{currentSlide.primaryButtonText}</a>
                 </Button>
                 <Button
                   variant="outline"
-                  className="bg-white border border-[#00b0b9] text-[#00b0b9] hover:bg-[#f7f7f7] py-3 px-6 rounded-md font-semibold"
+                  className="bg-white border border-[#0047FF] text-[#0047FF] hover:bg-[#f7f7f7] py-3 px-6 rounded-md font-semibold"
                   asChild
                 >
                   <a href={currentSlide.secondaryButtonUrl}>{currentSlide.secondaryButtonText}</a>
@@ -91,8 +91,8 @@ export default function HeroCarousel() {
               onClick={() => setActiveSlide(index)}
               className={`h-2 rounded-full transition-all ${
                 index === activeSlide
-                  ? "w-8 bg-[#00b0b9]"
-                  : "w-2 bg-gray-400 hover:bg-[#00b0b9]"
+                  ? "w-8 bg-[#0047FF]"
+                  : "w-2 bg-gray-400 hover:bg-[#0047FF]"
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />

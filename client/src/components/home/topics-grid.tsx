@@ -13,14 +13,14 @@ import {
 
 // Fallback icons in case the data doesn't have them
 const categoryIcons: Record<string, React.ReactNode> = {
-  "faith": <BookOpen className="text-[#00b0b9] h-8 w-8" />,
-  "society": <Users className="text-[#00b0b9] h-8 w-8" />,
-  "history": <Landmark className="text-[#00b0b9] h-8 w-8" />,
-  "law": <Scale className="text-[#00b0b9] h-8 w-8" />,
-  "spirituality": <Heart className="text-[#00b0b9] h-8 w-8" />,
-  "education": <GraduationCap className="text-[#00b0b9] h-8 w-8" />,
-  "culture": <Globe className="text-[#00b0b9] h-8 w-8" />,
-  "science": <Microscope className="text-[#00b0b9] h-8 w-8" />,
+  "faith": <BookOpen className="text-[#0047FF] h-8 w-8" />,
+  "society": <Users className="text-[#0047FF] h-8 w-8" />,
+  "history": <Landmark className="text-[#0047FF] h-8 w-8" />,
+  "law": <Scale className="text-[#0047FF] h-8 w-8" />,
+  "spirituality": <Heart className="text-[#0047FF] h-8 w-8" />,
+  "education": <GraduationCap className="text-[#0047FF] h-8 w-8" />,
+  "culture": <Globe className="text-[#0047FF] h-8 w-8" />,
+  "science": <Microscope className="text-[#0047FF] h-8 w-8" />,
 };
 
 // If data isn't available, use this fallback
@@ -122,8 +122,8 @@ export default function TopicsGrid() {
                 href={`/topics/${topic.slug}`}
                 className="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow"
               >
-                <div className="text-[#00b0b9] mb-4">
-                  {categoryIcons[topic.icon || topic.slug.toLowerCase()] || <BookOpen className="text-[#00b0b9] h-8 w-8 mx-auto" />}
+                <div className="text-[#0047FF] mb-4">
+                  {categoryIcons[topic.icon || topic.slug.toLowerCase()] || <BookOpen className="text-[#0047FF] h-8 w-8 mx-auto" />}
                 </div>
                 <h3 className="font-bold text-lg mb-2">{topic.name}</h3>
                 <p className="text-sm text-[#4a5568]">{topic.description}</p>

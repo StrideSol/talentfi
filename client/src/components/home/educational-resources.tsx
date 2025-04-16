@@ -55,7 +55,7 @@ export default function EducationalResources() {
                   <p className="text-sm text-[#4a5568] mb-3">{resource.excerpt}</p>
                   <a
                     href={`/resources/${resource.slug}`}
-                    className="text-[#00b0b9] text-sm font-semibold hover:underline"
+                    className="text-[#0047FF] text-sm font-semibold hover:underline"
                   >
                     View Course →
                   </a>
@@ -68,7 +68,7 @@ export default function EducationalResources() {
         <div className="text-center mt-10">
           <Button
             variant="outline"
-            className="inline-block bg-white border border-[#00b0b9] text-[#00b0b9] py-2 px-6 rounded-md font-semibold hover:bg-[#f7f7f7]"
+            className="inline-block bg-white border border-[#0047FF] text-[#0047FF] py-2 px-6 rounded-md font-semibold hover:bg-[#f7f7f7]"
           >
             Browse All Resources
           </Button>
