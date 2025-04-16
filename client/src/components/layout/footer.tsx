@@ -10,9 +10,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* About Column */}
           <div>
-            <h3 className="text-xl font-bold mb-4">About Global EOR</h3>
+            <h3 className="text-xl font-bold mb-4">About talentfi</h3>
             <p className="text-gray-300 mb-4">
-              Global EOR is a leading provider of Employer of Record services helping businesses hire and manage employees internationally with full compliance.
+              talentfi is South Africa's premier Employer of Record service helping international businesses hire and manage employees in South Africa with full compliance.
             </p>
             <div className="flex space-x-4 text-gray-300">
               <a href="#" className="hover:text-white" aria-label="Facebook">
@@ -46,16 +46,16 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Explore Countries */}
+          {/* Explore Regions */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Explore Countries</h3>
+            <h3 className="text-xl font-bold mb-4">Explore South Africa</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white">United Kingdom</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Australia</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Germany</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Singapore</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Canada</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">View All Countries</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white">Cape Town</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white">Johannesburg</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white">Durban</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white">Pretoria</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white">Port Elizabeth</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white">View All Regions</a></li>
             </ul>
           </div>
 
@@ -65,15 +65,15 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-300">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mt-1 mr-3" />
-                <span>100 Global Tower<br />London, UK W1A 1AA</span>
+                <span>25 Sandton Drive<br />Sandton, Johannesburg 2196</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-3" />
-                <a href="mailto:info@globaleor.com" className="hover:text-white">info@globaleor.com</a>
+                <a href="mailto:info@talentfi.co.za" className="hover:text-white">info@talentfi.co.za</a>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-3" />
-                <a href="tel:+442045123456" className="hover:text-white">+44 204 512 3456</a>
+                <a href="tel:+27112345678" className="hover:text-white">+27 11 234 5678</a>
               </li>
             </ul>
             <Button className="mt-4 inline-block bg-[#FF9500] hover:bg-opacity-90 text-white py-2 px-6 rounded-md font-semibold">
@@ -86,7 +86,7 @@ export default function Footer() {
         <div className="pt-6 border-t border-gray-700 text-sm text-gray-400">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <p>&copy; {new Date().getFullYear()} Global EOR Solutions Ltd. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} talentfi (Pty) Ltd. All rights reserved.</p>
             </div>
             <div className="flex space-x-6">
               <a href="#" className="hover:text-white">Privacy Policy</a>

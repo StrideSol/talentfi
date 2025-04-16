@@ -112,8 +112,8 @@ export default function Navbar() {
             <div className="flex items-center">
               <Link href="/">
                 <div className="h-10 w-40 bg-white flex items-center cursor-pointer">
-                  <span className="text-[#0047FF] font-bold text-xl">GLOBAL</span>
-                  <span className="text-[#2d2d2d] text-sm ml-1">EOR</span>
+                  <span className="text-[#0047FF] font-bold text-xl">talent</span>
+                  <span className="text-[#FF9500] font-bold text-xl">fi</span>
                 </div>
               </Link>
             </div>
@@ -218,7 +218,7 @@ export default function Navbar() {
               <input
                 type="text"
                 className="w-full py-3 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#0047FF]"
-                placeholder="Search for EOR services, countries, and compliance guides..."
+                placeholder="Search for South African EOR services and compliance guides..."
                 autoFocus
               />
               <Button className="absolute right-1 top-1 bg-[#0047FF] hover:bg-[#0035C8]">

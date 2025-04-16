@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 const carouselData = [
   {
     id: 1,
-    title: "Global Workforce Solutions",
-    description: "Expand your team internationally without establishing local entities. Our EOR services make global hiring simple and compliant.",
-    imageUrl: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    title: "South African Workforce Solutions",
+    description: "Expand your team into South Africa without establishing a local entity. Our EOR services make hiring in South Africa simple and compliant.",
+    imageUrl: "https://images.unsplash.com/photo-1576485375217-d6a95e34d041?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     primaryButtonText: "Get Started",
     primaryButtonUrl: "#",
     secondaryButtonText: "How It Works",
@@ -14,19 +14,19 @@ const carouselData = [
   },
   {
     id: 2,
-    title: "Compliant in 150+ Countries",
-    description: "Hire, onboard and pay employees globally with complete legal compliance in over 150 countries across six continents.",
-    imageUrl: "https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    primaryButtonText: "Country Explorer",
+    title: "Fully Compliant with SA Labor Laws",
+    description: "Hire, onboard and pay employees in South Africa with complete legal compliance, including BEE requirements and labor regulations.",
+    imageUrl: "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    primaryButtonText: "Compliance Guide",
     primaryButtonUrl: "#",
-    secondaryButtonText: "Compliance Guide",
+    secondaryButtonText: "SA Labor FAQ",
     secondaryButtonUrl: "#",
   },
   {
     id: 3,
-    title: "Seamless Global Payroll",
-    description: "Manage global payroll, benefits, and taxes in multiple currencies while ensuring local compliance and employee satisfaction.",
-    imageUrl: "https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    title: "South African Payroll & Benefits",
+    description: "Manage payroll, benefits, UIF, and taxes in South Africa while ensuring local compliance and employee satisfaction.",
+    imageUrl: "https://images.unsplash.com/photo-1577538928305-3807c3993047?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     primaryButtonText: "Payroll Solutions",
     primaryButtonUrl: "#",
     secondaryButtonText: "Request Demo",
@@ -54,8 +54,8 @@ export default function HeroCarousel() {
           <div className="w-full md:w-2/3 p-6 md:p-12 flex items-center text-white">
             <div>
               <h1 className="text-3xl md:text-5xl font-bold mb-4">
-                <span className="text-white">Your</span> <span className="text-[#FF9500]">global employment</span> <span className="text-white">partner for</span><br/>
-                <span className="text-white">international expansion.</span>
+                <span className="text-white">Your</span> <span className="text-[#FF9500]">South African</span> <span className="text-white">employment</span><br/>
+                <span className="text-white">partner for global businesses.</span>
               </h1>
               <p className="text-lg md:text-xl mb-8">{currentSlide.description}</p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
