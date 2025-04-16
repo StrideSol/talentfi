@@ -114,7 +114,7 @@ export default function Navbar() {
                 <div className="h-10 w-48 bg-white flex items-center cursor-pointer">
                   <span className="text-[#0047FF] font-bold text-xl">talent</span>
                   <span className="text-[#FF9500] font-bold text-xl">fi</span>
-                  <span className="text-[#0047FF] font-bold text-xs ml-1 bg-[#E6EDFF] px-2 py-0.5 rounded-md tracking-wide border border-[#0047FF]">EOR</span>
+                  <span className="text-white font-bold text-xs ml-3 bg-[#FF9500] px-2 py-0.5 rounded-md tracking-wide">EOR</span>
                 </div>
               </Link>
             </div>
