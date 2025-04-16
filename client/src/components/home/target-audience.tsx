@@ -9,7 +9,7 @@ export default function TargetAudience() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* SMEs & Startups Column */}
-          <div className="bg-[#0a1845] p-6 rounded-lg shadow-lg border-l-4 border-[#FF9500]">
+          <div className="bg-[#4169e1] p-6 rounded-lg shadow-lg border-l-4 border-[#FF9500]">
             <h3 className="text-xl font-bold text-white mb-4">Small & Medium Enterprises (SMEs) & Startups</h3>
             
             <div className="mb-4">
@@ -38,7 +38,7 @@ export default function TargetAudience() {
           </div>
 
           {/* Corporate Enterprises Column */}
-          <div className="bg-[#0a1845] p-6 rounded-lg shadow-lg border-l-4 border-[#FF9500]">
+          <div className="bg-[#4169e1] p-6 rounded-lg shadow-lg border-l-4 border-[#FF9500]">
             <h3 className="text-xl font-bold text-white mb-4">Corporate Enterprises & Multinational Companies</h3>
             
             <div className="mb-4">
