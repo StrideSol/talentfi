@@ -12,8 +12,7 @@ export default function Home() {
     <div>
       <HeroCarousel />
       <TargetAudience />
-      <TopicsGrid />
-      <LatestPublications />
+
       <CustomerJourney />
       <NewsletterSignup />
       <UpcomingEvents />
