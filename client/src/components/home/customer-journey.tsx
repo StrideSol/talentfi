@@ -5,7 +5,7 @@ export default function CustomerJourney() {
     <section className="py-12 bg-gradient-to-br from-[#0047FF] to-[#001d66]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-2 text-white">Customer Journey & Positioning</h2>
+          <h2 className="text-3xl font-bold mb-2 text-white">Customer Journey</h2>
           <p className="text-gray-200">How we help companies streamline their South African employment needs</p>
         </div>
 
