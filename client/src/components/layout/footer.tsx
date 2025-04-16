@@ -76,7 +76,7 @@ export default function Footer() {
                 <a href="tel:+1234567890" className="hover:text-white">(123) 456-7890</a>
               </li>
             </ul>
-            <Button className="mt-4 inline-block bg-[#00b0b9] hover:bg-opacity-90 text-white py-2 px-6 rounded-md font-semibold">
+            <Button className="mt-4 inline-block bg-[#0047FF] hover:bg-opacity-90 text-white py-2 px-6 rounded-md font-semibold">
               Donate Now
             </Button>
           </div>

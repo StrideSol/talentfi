@@ -50,7 +50,7 @@ export default function UpcomingEvents() {
                   key={event.id}
                   className="flex border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <div className="w-1/4 bg-[#00b0b9] text-white flex flex-col items-center justify-center p-4 text-center">
+                  <div className="w-1/4 bg-[#0047FF] text-white flex flex-col items-center justify-center p-4 text-center">
                     <span className="text-2xl font-bold">
                       {format(eventDate, "dd")}
                     </span>
@@ -73,7 +73,7 @@ export default function UpcomingEvents() {
                     {event.registrationUrl && (
                       <a
                         href={event.registrationUrl}
-                        className="mt-3 inline-block text-[#00b0b9] text-sm font-semibold hover:underline"
+                        className="mt-3 inline-block text-[#0047FF] text-sm font-semibold hover:underline"
                       >
                         Register →
                       </a>
@@ -88,7 +88,7 @@ export default function UpcomingEvents() {
         <div className="text-center mt-10">
           <Button
             variant="outline"
-            className="inline-block bg-white border border-[#00b0b9] text-[#00b0b9] py-2 px-6 rounded-md font-semibold hover:bg-[#f7f7f7]"
+            className="inline-block bg-white border border-[#0047FF] text-[#0047FF] py-2 px-6 rounded-md font-semibold hover:bg-[#f7f7f7]"
           >
             View All Events
           </Button>

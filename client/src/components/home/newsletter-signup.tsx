@@ -54,7 +54,7 @@ export default function NewsletterSignup() {
   };
 
   return (
-    <section className="py-16 bg-[#00b0b9] text-white">
+    <section className="py-16 bg-[#0047FF] text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Stay Updated with Our Newsletter</h2>
@@ -87,7 +87,7 @@ export default function NewsletterSignup() {
               <Button
                 type="submit"
                 disabled={isPending}
-                className="bg-[#ef4123] text-white py-3 px-8 rounded-md font-semibold hover:bg-opacity-90 transition"
+                className="bg-[#FF9500] text-white py-3 px-8 rounded-md font-semibold hover:bg-opacity-90 transition"
               >
                 {isPending ? "Subscribing..." : "Subscribe"}
               </Button>

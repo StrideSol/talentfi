@@ -47,17 +47,20 @@ export default function HeroCarousel() {
   const currentSlide = carouselData[activeSlide];
 
   return (
-    <div className="relative bg-[#f7f7f7]">
+    <div className="relative bg-[#0047FF]">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row">
           {/* Main Hero Content */}
-          <div className="w-full md:w-2/3 p-6 md:p-12 flex items-center">
+          <div className="w-full md:w-2/3 p-6 md:p-12 flex items-center text-white">
             <div>
-              <h1 className="text-3xl md:text-5xl font-bold mb-4">{currentSlide.title}</h1>
+              <h1 className="text-3xl md:text-5xl font-bold mb-4">
+                <span className="text-white">Your</span> <span className="text-[#FF9500]">credible source</span> <span className="text-white">on</span><br/>
+                <span className="text-white">contemporary Islamic topics.</span>
+              </h1>
               <p className="text-lg md:text-xl mb-8">{currentSlide.description}</p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                 <Button
-                  className="bg-[#0047FF] hover:bg-[#0035C8] text-white py-3 px-6 rounded-md font-semibold"
+                  className="bg-[#FF9500] hover:bg-[#E68600] text-white py-3 px-6 rounded-md font-semibold"
                   asChild
                 >
                   <a href={currentSlide.primaryButtonUrl}>{currentSlide.primaryButtonText}</a>
