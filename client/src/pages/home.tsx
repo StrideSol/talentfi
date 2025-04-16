@@ -11,11 +11,10 @@ export default function Home() {
   return (
     <div>
       <HeroCarousel />
-      <FeaturedContent />
+      <TargetAudience />
       <TopicsGrid />
       <LatestPublications />
       <CustomerJourney />
-      <TargetAudience />
       <NewsletterSignup />
       <UpcomingEvents />
     </div>
