@@ -27,59 +27,59 @@ const categoryIcons: Record<string, React.ReactNode> = {
 const fallbackTopics = [
   {
     id: 1,
-    name: "Faith",
-    slug: "faith",
-    icon: "faith",
-    description: "Theology, spirituality, and religious practice",
+    name: "Global Compliance",
+    slug: "compliance",
+    icon: "compliance",
+    description: "Stay compliant with employment laws worldwide",
   },
   {
     id: 2,
-    name: "Society",
-    slug: "society",
-    icon: "society",
-    description: "Social issues, ethics, and community development",
+    name: "Payroll Management",
+    slug: "payroll",
+    icon: "payroll",
+    description: "Process payroll in multiple currencies and jurisdictions",
   },
   {
     id: 3,
-    name: "History",
-    slug: "history",
-    icon: "history",
-    description: "Islamic history and historical analysis",
+    name: "Benefits Administration",
+    slug: "benefits",
+    icon: "benefits",
+    description: "Manage competitive benefits packages for global teams",
   },
   {
     id: 4,
-    name: "Law",
-    slug: "law",
-    icon: "law",
-    description: "Islamic jurisprudence and legal theory",
+    name: "Employee Onboarding",
+    slug: "onboarding",
+    icon: "onboarding",
+    description: "Streamlined hiring and onboarding for international employees",
   },
   {
     id: 5,
-    name: "Spirituality",
-    slug: "spirituality",
-    icon: "spirituality",
-    description: "Inner dimensions of faith and spiritual growth",
+    name: "Tax Management",
+    slug: "tax",
+    icon: "tax",
+    description: "Navigate complex international tax requirements",
   },
   {
     id: 6,
-    name: "Education",
-    slug: "education",
-    icon: "education",
-    description: "Teaching methods and educational resources",
+    name: "Visa & Immigration",
+    slug: "visa",
+    icon: "visa",
+    description: "Simplify work permits and visa application processes",
   },
   {
     id: 7,
-    name: "Culture",
-    slug: "culture",
-    icon: "culture",
-    description: "Art, literature, and cultural expressions",
+    name: "Employment Contracts",
+    slug: "contracts",
+    icon: "contracts",
+    description: "Legally-compliant employment agreements for all jurisdictions",
   },
   {
     id: 8,
-    name: "Science",
-    slug: "science",
-    icon: "science",
-    description: "Islamic perspectives on scientific topics",
+    name: "Global Expansion",
+    slug: "global",
+    icon: "global",
+    description: "Strategic guidance for entering new international markets",
   },
 ];
 
@@ -95,8 +95,8 @@ export default function TopicsGrid() {
     <section className="py-12 bg-[#f7f7f7]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-2">Explore Topics</h2>
-          <p className="text-[#4a5568]">Discover research and resources by subject area</p>
+          <h2 className="text-3xl font-bold mb-2">Our EOR Services</h2>
+          <p className="text-[#4a5568]">Explore our comprehensive global employment solutions</p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
