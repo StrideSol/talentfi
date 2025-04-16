@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { IconButton } from "@/components/ui/icon-button";
 import {
@@ -70,6 +70,7 @@ const navItems = [
 
 export default function Navbar() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [, setLocation] = useLocation();
 
   return (
     <header className="w-full">
@@ -86,6 +87,9 @@ export default function Navbar() {
             <a href="#" className="hover:underline">
               Client Portal
             </a>
+            <Link href="/admin/login" className="hover:underline">
+              Admin
+            </Link>
             <div className="flex space-x-2">
               <a href="#" aria-label="Facebook">
                 <Facebook size={16} />
@@ -193,6 +197,13 @@ export default function Navbar() {
                       </Button>
                       <Button variant="outline" className="w-full border-[#0047FF] text-[#0047FF]">
                         Client Portal
+                      </Button>
+                      <Button 
+                        variant="outline" 
+                        className="w-full border-[#FF9500] text-[#FF9500]"
+                        onClick={() => setLocation("/admin/login")}
+                      >
+                        Admin Login
                       </Button>
                     </div>
                   </div>
