@@ -6,7 +6,9 @@ import {
   type Content, 
   type Event, 
   type InsertNewsletterSubscription, 
-  type NewsletterSubscription 
+  type NewsletterSubscription,
+  type CarouselSlide,
+  type InsertCarouselSlide
 } from "@shared/schema";
 import { mockCategories, mockContent, mockEvents } from "../client/src/lib/data";
 
@@ -29,6 +31,13 @@ export interface IStorage {
   
   // Newsletter methods
   createNewsletterSubscription(data: InsertNewsletterSubscription): Promise<NewsletterSubscription>;
+  
+  // Carousel methods
+  getCarouselSlides(): Promise<CarouselSlide[]>;
+  getCarouselSlide(id: number): Promise<CarouselSlide | undefined>;
+  createCarouselSlide(data: InsertCarouselSlide): Promise<CarouselSlide>;
+  updateCarouselSlide(id: number, data: Partial<InsertCarouselSlide>): Promise<CarouselSlide | undefined>;
+  deleteCarouselSlide(id: number): Promise<boolean>;
 }
 
 export class MemStorage implements IStorage {
@@ -37,15 +46,19 @@ export class MemStorage implements IStorage {
   private content: Content[];
   private events: Event[];
   private newsletterSubscriptions: Map<number, NewsletterSubscription>;
+  private carouselSlides: Map<number, CarouselSlide>;
   
   currentId: number;
   private subscriptionId: number;
+  private carouselSlideId: number;
 
   constructor() {
     this.users = new Map();
     this.currentId = 1;
     this.subscriptionId = 1;
+    this.carouselSlideId = 1;
     this.newsletterSubscriptions = new Map();
+    this.carouselSlides = new Map();
     
     // Initialize with mock data
     this.categories = mockCategories.map((cat, index) => ({
@@ -73,6 +86,56 @@ export class MemStorage implements IStorage {
       location: event.location || null,
       registrationUrl: event.registrationUrl || null
     }));
+    
+    // Initialize carousel slides with current data
+    const initialCarouselSlides: CarouselSlide[] = [
+      {
+        id: this.carouselSlideId++,
+        title: "South African Workforce Solutions",
+        description: "Your trusted South African employment partner. Our local EOR services make hiring in South Africa simple and fully compliant.",
+        imageUrl: "https://images.unsplash.com/photo-1576485375217-d6a95e34d041?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        primaryButtonText: "Get Started",
+        primaryButtonUrl: "#",
+        secondaryButtonText: "How It Works",
+        secondaryButtonUrl: "#",
+        order: 0,
+        isActive: true,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        id: this.carouselSlideId++,
+        title: "Fully Compliant with SA Labor Laws",
+        description: "Hire, onboard and pay employees in South Africa with complete legal compliance, including BEE requirements and labor regulations.",
+        imageUrl: "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        primaryButtonText: "Compliance Guide",
+        primaryButtonUrl: "#",
+        secondaryButtonText: "SA Labor FAQ",
+        secondaryButtonUrl: "#",
+        order: 1,
+        isActive: true,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        id: this.carouselSlideId++,
+        title: "South African Payroll & Benefits",
+        description: "Manage payroll, benefits, UIF, and taxes in South Africa while ensuring local compliance and employee satisfaction.",
+        imageUrl: "https://images.unsplash.com/photo-1577538928305-3807c3993047?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        primaryButtonText: "Payroll Solutions",
+        primaryButtonUrl: "#",
+        secondaryButtonText: "Request Demo",
+        secondaryButtonUrl: "#",
+        order: 2,
+        isActive: true,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }
+    ];
+    
+    initialCarouselSlides.forEach(slide => {
+      this.carouselSlides.set(slide.id, slide);
+    });
   }
 
   // User methods

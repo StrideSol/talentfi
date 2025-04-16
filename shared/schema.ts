@@ -1,4 +1,4 @@
-import { pgTable, text, serial, integer, varchar, timestamp } from "drizzle-orm/pg-core";
+import { pgTable, text, serial, integer, varchar, timestamp, boolean } from "drizzle-orm/pg-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
@@ -100,3 +100,21 @@ export const insertNewsletterSubscriptionSchema = createInsertSchema(newsletterS
 
 export type InsertNewsletterSubscription = z.infer<typeof insertNewsletterSubscriptionSchema>;
 export type NewsletterSubscription = typeof newsletterSubscriptions.$inferSelect;
+
+// Carousel slide types (using simple interface instead of database table)
+export interface CarouselSlide {
+  id: number;
+  title: string;
+  description: string;
+  imageUrl: string;
+  primaryButtonText: string;
+  primaryButtonUrl: string;
+  secondaryButtonText: string;
+  secondaryButtonUrl: string;
+  order: number;
+  isActive: boolean;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+export type InsertCarouselSlide = Omit<CarouselSlide, 'id' | 'createdAt' | 'updatedAt'>;
