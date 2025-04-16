@@ -12,7 +12,7 @@ export default function EducationalResources() {
     <section className="py-12 bg-[#f7f7f7]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-2">Country Guides & Resources</h2>
+          <h2 className="text-3xl font-bold mb-2">Customer Journey</h2>
           <p className="text-[#4a5568]">Essential information for employers expanding into new markets</p>
         </div>
 
