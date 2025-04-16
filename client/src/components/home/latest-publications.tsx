@@ -53,10 +53,10 @@ export default function LatestPublications() {
                   <p className="text-sm text-[#4a5568] mb-4">{pub.excerpt}</p>
                   <div className="mt-auto">
                     <a
-                      href={`/publications/${pub.slug}`}
+                      href={`/insights/${pub.slug}`}
                       className="text-[#0047FF] font-semibold text-sm hover:underline"
                     >
-                      Read Publication →
+                      Read Article →
                     </a>
                   </div>
                 </div>
@@ -70,7 +70,7 @@ export default function LatestPublications() {
             variant="outline"
             className="inline-block bg-white border border-[#0047FF] text-[#0047FF] py-2 px-6 rounded-md font-semibold hover:bg-[#f7f7f7]"
           >
-            View All Publications
+            View All Insights
           </Button>
         </div>
       </div>

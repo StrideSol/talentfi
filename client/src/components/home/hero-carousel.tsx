@@ -94,8 +94,8 @@ export default function HeroCarousel() {
               onClick={() => setActiveSlide(index)}
               className={`h-2 rounded-full transition-all ${
                 index === activeSlide
-                  ? "w-8 bg-[#0047FF]"
-                  : "w-2 bg-gray-400 hover:bg-[#0047FF]"
+                  ? "w-8 bg-[#FF9500]"
+                  : "w-2 bg-white hover:bg-[#FF9500]"
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />

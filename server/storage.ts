@@ -1,23 +1,70 @@
-import { users, type User, type InsertUser } from "@shared/schema";
+import { 
+  users, 
+  type User, 
+  type InsertUser, 
+  type ContentCategory, 
+  type Content, 
+  type Event, 
+  type InsertNewsletterSubscription, 
+  type NewsletterSubscription 
+} from "@shared/schema";
+import { mockCategories, mockContent, mockEvents } from "../client/src/lib/data";
 
 // modify the interface with any CRUD methods
 // you might need
 
 export interface IStorage {
+  // User methods
   getUser(id: number): Promise<User | undefined>;
   getUserByUsername(username: string): Promise<User | undefined>;
   createUser(user: InsertUser): Promise<User>;
+  
+  // Content methods
+  getContentCategories(): Promise<ContentCategory[]>;
+  getFeaturedContent(): Promise<Content[]>;
+  getContentByType(type: string): Promise<Content[]>;
+  
+  // Event methods
+  getEvents(): Promise<Event[]>;
+  
+  // Newsletter methods
+  createNewsletterSubscription(data: InsertNewsletterSubscription): Promise<NewsletterSubscription>;
 }
 
 export class MemStorage implements IStorage {
   private users: Map<number, User>;
+  private categories: ContentCategory[];
+  private content: Content[];
+  private events: Event[];
+  private newsletterSubscriptions: Map<number, NewsletterSubscription>;
+  
   currentId: number;
+  private subscriptionId: number;
 
   constructor() {
     this.users = new Map();
     this.currentId = 1;
+    this.subscriptionId = 1;
+    this.newsletterSubscriptions = new Map();
+    
+    // Initialize with mock data
+    this.categories = mockCategories.map((cat, index) => ({
+      ...cat,
+      id: index + 1
+    }));
+    
+    this.content = mockContent.map((cont, index) => ({
+      ...cont,
+      id: index + 1
+    }));
+    
+    this.events = mockEvents.map((event, index) => ({
+      ...event,
+      id: index + 1
+    }));
   }
 
+  // User methods
   async getUser(id: number): Promise<User | undefined> {
     return this.users.get(id);
   }
@@ -33,6 +80,34 @@ export class MemStorage implements IStorage {
     const user: User = { ...insertUser, id };
     this.users.set(id, user);
     return user;
+  }
+  
+  // Content methods
+  async getContentCategories(): Promise<ContentCategory[]> {
+    return this.categories;
+  }
+  
+  async getFeaturedContent(): Promise<Content[]> {
+    return this.content.filter(item => item.contentType === "article").slice(0, 3);
+  }
+  
+  async getContentByType(type: string): Promise<Content[]> {
+    return this.content.filter(item => item.contentType === type);
+  }
+  
+  // Event methods
+  async getEvents(): Promise<Event[]> {
+    // Return events that haven't happened yet
+    const now = new Date();
+    return this.events.filter(event => new Date(event.eventDate) >= now);
+  }
+  
+  // Newsletter methods
+  async createNewsletterSubscription(data: InsertNewsletterSubscription): Promise<NewsletterSubscription> {
+    const id = this.subscriptionId++;
+    const subscription: NewsletterSubscription = { ...data, id };
+    this.newsletterSubscriptions.set(id, subscription);
+    return subscription;
   }
 }
 
