@@ -3,7 +3,7 @@ export default function TargetAudience() {
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-2 text-[#0047FF]">Primary Target Audience</h2>
+          <h2 className="text-3xl font-bold mb-2 text-[#0047FF]">How we can help you</h2>
           <p className="text-[#4a5568]">Our tailored solutions for different business needs</p>
         </div>
 
