@@ -35,17 +35,17 @@ const navItems = [
   {
     title: "Services",
     items: [
-      { title: "Global EOR Solutions", href: "#" },
+      { title: "South African EOR Solutions", href: "#" },
       { title: "Contractor Management", href: "#" },
-      { title: "Global Payroll", href: "#" },
+      { title: "South African Payroll", href: "#" },
     ],
   },
   {
-    title: "Countries",
+    title: "Regions",
     items: [
-      { title: "Europe", href: "#" },
-      { title: "Asia Pacific", href: "#" },
-      { title: "Americas", href: "#" },
+      { title: "Cape Town", href: "#" },
+      { title: "Johannesburg", href: "#" },
+      { title: "Durban", href: "#" },
     ],
   },
   {
@@ -77,7 +77,7 @@ export default function Navbar() {
       <div className="bg-[#0047FF] text-white py-2 px-4 md:px-6">
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-sm hidden md:block">
-            Simplifying global hiring with our industry-leading EOR solutions
+            South Africa's premier Employer of Record solution for international businesses
           </div>
           <div className="flex space-x-4 text-sm">
             <a href="#" className="hover:underline">
