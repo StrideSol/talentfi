@@ -77,7 +77,7 @@ export default function Navbar() {
       {/* Top Bar */}
       <div className="bg-[#0047FF] text-white py-2 px-4 md:px-6">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="text-sm hidden md:block">
+          <div className="text-sm hidden md:block mr-8">
             Your trusted <span className="text-[#FF9500] font-bold">Employer of Record</span> in South Africa — hire, pay, and manage talent with full compliance
           </div>
           <div className="flex space-x-4 text-sm">
