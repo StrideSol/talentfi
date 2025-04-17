@@ -84,9 +84,6 @@ export default function Navbar() {
             <a href="#" className="hover:underline">
               Get a Quote
             </a>
-            <a href="#" className="hover:underline">
-              Client Portal
-            </a>
             <Link href="/admin/login" className="hover:underline">
               Admin
             </Link>
@@ -194,9 +191,6 @@ export default function Navbar() {
                     <div className="mt-4 space-y-2">
                       <Button className="w-full bg-[#0047FF] hover:bg-[#0035C8]">
                         Get a Quote
-                      </Button>
-                      <Button variant="outline" className="w-full border-[#0047FF] text-[#0047FF]">
-                        Client Portal
                       </Button>
                       <Button 
                         variant="outline" 
