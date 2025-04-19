@@ -57,8 +57,7 @@ export default function NewsletterSignup() {
     <section className="py-16 bg-[#0047FF] text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Pricing</h2>
-          <p className="mb-8">
+          <p className="mb-8 text-xl">
             Enter your email to receive our detailed pricing packages and save up to 65% compared to hiring in the USA.
           </p>
 
