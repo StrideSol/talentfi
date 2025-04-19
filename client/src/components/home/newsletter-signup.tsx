@@ -67,20 +67,20 @@ export default function NewsletterSignup() {
               <div className="bg-[#4caf50] p-6 rounded-lg text-white max-w-lg">
                 <h4 className="text-xl font-bold text-center mb-6">talentfi: $500</h4>
                 
-                <div className="space-y-8">
-                  <div className="grid grid-cols-3 items-center">
-                    <div className="text-left font-semibold">Pricing Model</div>
-                    <div className="col-span-2 text-left">Flat fee of $500 per employee per month. Other providers: $700</div>
+                <div className="space-y-4">
+                  <div className="grid grid-cols-3 items-start py-2">
+                    <div className="text-left font-semibold pt-1">Pricing Model</div>
+                    <div className="col-span-2 text-left pl-6">Flat fee of $500 per employee per month. Other providers: $700</div>
                   </div>
                   
-                  <div className="grid grid-cols-3 items-center">
-                    <div className="text-left font-semibold">Once-off recruitment fee</div>
-                    <div className="col-span-2 text-left">Fixed flat rate. No hidden fees.</div>
+                  <div className="grid grid-cols-3 items-start py-2">
+                    <div className="text-left font-semibold pt-1">Once-off recruitment fee</div>
+                    <div className="col-span-2 text-left pl-6">Fixed flat rate. No hidden fees.</div>
                   </div>
                   
-                  <div className="grid grid-cols-3 items-center">
-                    <div className="text-left font-semibold">Remote training</div>
-                    <div className="col-span-2 text-left">Included in package. No additional fees.</div>
+                  <div className="grid grid-cols-3 items-start py-2">
+                    <div className="text-left font-semibold pt-1">Remote training</div>
+                    <div className="col-span-2 text-left pl-6">Included in package. No additional fees.</div>
                   </div>
                 </div>
               </div>
