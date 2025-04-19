@@ -60,12 +60,12 @@ export default function NewsletterSignup() {
           <h2 className="text-3xl font-bold mb-8">Pricing</h2>
           
           <div className="bg-[#f9f9f9] text-black p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Save up to 80% with talentfi</h3>
+            <h3 className="text-2xl font-bold mb-4">Save up to 65% with Talentfi</h3>
             
             <div className="flex justify-center mt-8">
               {/* talentfi Column */}
               <div className="bg-[#FF9500] p-6 rounded-lg text-white max-w-lg">
-                <h4 className="text-xl font-bold text-center mb-6">talentfi: $500</h4>
+                <h4 className="text-xl font-bold text-center mb-6">Talentfi: $500</h4>
                 
                 <div className="space-y-4">
                   <div className="grid grid-cols-3 items-start py-2">
