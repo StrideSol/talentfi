@@ -74,7 +74,7 @@ export default function NewsletterSignup() {
                   </div>
                   
                   <div className="grid grid-cols-3 items-center">
-                    <div className="text-left font-semibold">Employee Costs</div>
+                    <div className="text-left font-semibold">Once-off recruitment fee</div>
                     <div className="col-span-2 text-left">Fixed flat rate. No hidden fees.</div>
                   </div>
                   
