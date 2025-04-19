@@ -79,8 +79,8 @@ export default function NewsletterSignup() {
                   </div>
                   
                   <div className="grid grid-cols-3 items-center">
-                    <div className="text-left font-semibold">Contractor Costs</div>
-                    <div className="col-span-2 text-left">Free to manage contractors and $25 per contractor, per month to process payments.</div>
+                    <div className="text-left font-semibold">Remote training</div>
+                    <div className="col-span-2 text-left">Included in package. No additional fees.</div>
                   </div>
                 </div>
               </div>
