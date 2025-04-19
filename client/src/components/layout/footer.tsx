@@ -76,9 +76,11 @@ export default function Footer() {
                 <a href="tel:+27112345678" className="hover:text-white">+27 11 234 5678</a>
               </li>
             </ul>
-            <Button className="mt-4 inline-block bg-[#FF9500] hover:bg-opacity-90 text-white py-2 px-6 rounded-md font-semibold">
-              Get a Quote
-            </Button>
+            <img 
+              src="/images/talentfilogo.png" 
+              alt="talentfi logo" 
+              className="mt-4 h-16 w-auto"
+            />
           </div>
         </div>
 
