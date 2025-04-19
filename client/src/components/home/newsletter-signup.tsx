@@ -87,24 +87,7 @@ export default function NewsletterSignup() {
               
               {/* Other providers Column */}
               <div className="bg-white p-6 rounded-lg text-gray-800">
-                <h4 className="text-xl font-bold text-center mb-6">Other providers: $700</h4>
-                
-                <div className="space-y-8">
-                  <div className="grid grid-cols-3 items-center">
-                    <div className="text-left font-semibold">Pricing Model</div>
-                    <div className="col-span-2 text-left">Other hidden fees and costs.</div>
-                  </div>
-                  
-                  <div className="grid grid-cols-3 items-center">
-                    <div className="text-left font-semibold">Employee Costs</div>
-                    <div className="col-span-2 text-left">Starts from $599/per employee, per month and can go up to $1000/per employee, per month.</div>
-                  </div>
-                  
-                  <div className="grid grid-cols-3 items-center">
-                    <div className="text-left font-semibold">Contractor Costs</div>
-                    <div className="col-span-2 text-left">2× (or more) the cost per contractor to manage and process payments.</div>
-                  </div>
-                </div>
+                <h4 className="text-xl font-bold text-center">Other providers: $700</h4>
               </div>
             </div>
           </div>
