@@ -57,9 +57,9 @@ export default function NewsletterSignup() {
     <section className="py-16 bg-[#0047FF] text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Stay Informed on South African Employment</h2>
+          <h2 className="text-3xl font-bold mb-4">Pricing</h2>
           <p className="mb-8">
-            Subscribe to receive the latest compliance updates, regional guides, and local hiring insights from talentfi.
+            Enter your email to receive our detailed pricing packages and save up to 65% compared to hiring in the USA.
           </p>
 
           <Form {...form}>
@@ -89,12 +89,12 @@ export default function NewsletterSignup() {
                 disabled={isPending}
                 className="bg-[#FF9500] text-white py-3 px-8 rounded-md font-semibold hover:bg-opacity-90 transition"
               >
-                {isPending ? "Subscribing..." : "Subscribe"}
+                {isPending ? "Requesting..." : "Get Pricing"}
               </Button>
             </form>
           </Form>
 
-          <p className="text-sm mt-4 opacity-80">We respect your privacy. Unsubscribe at any time.</p>
+          <p className="text-sm mt-4 opacity-80">Transparent pricing with no hidden fees. Includes full compliance and payroll services.</p>
         </div>
       </div>
     </section>
