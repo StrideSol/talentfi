@@ -12,8 +12,9 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Serve static files from the public directory for uploads
+// Serve static files from the public directory for uploads and images
 app.use('/uploads', express.static(path.join(__dirname, '../public/uploads')));
+app.use('/images', express.static(path.join(__dirname, '../public/images')));
 
 app.use((req, res, next) => {
   const start = Date.now();
