@@ -87,7 +87,7 @@ export default function NewsletterSignup() {
               
               {/* Other providers Column */}
               <div className="bg-white p-6 rounded-lg text-gray-800">
-                <h4 className="text-xl font-bold text-center mb-6">Other providers</h4>
+                <h4 className="text-xl font-bold text-center mb-6">Other providers: $700</h4>
                 
                 <div className="space-y-8">
                   <div className="grid grid-cols-3 items-center">
