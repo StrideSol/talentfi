@@ -59,45 +59,28 @@ export default function NewsletterSignup() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">Pricing</h2>
           
-          <div className="bg-[#f9f9f9] text-black p-6 rounded-lg shadow-lg">
+          <div className="bg-[#f9f9f9] text-black p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">Save up to 80% with talentfi</h3>
-            
-            <p className="mb-4">We are a radically transparent company and you will always know what you pay for. Here are a few reasons startups to Fortune 500 companies choose talentfi.</p>
             
             <div className="grid md:grid-cols-2 gap-8 mt-8">
               {/* talentfi Column */}
               <div className="bg-[#4caf50] p-6 rounded-lg text-white">
                 <h4 className="text-xl font-bold text-center mb-6">talentfi</h4>
                 
-                <div className="space-y-6">
-                  <div>
-                    <h5 className="font-semibold mb-2">Pricing Model</h5>
-                    <p>Fixed flat rate. No hidden fees.</p>
+                <div className="space-y-8">
+                  <div className="grid grid-cols-3 items-center">
+                    <div className="text-left font-semibold">Pricing Model</div>
+                    <div className="col-span-2 text-left">Fixed flat rate. No hidden fees.</div>
                   </div>
                   
-                  <div>
-                    <h5 className="font-semibold mb-2">Employee Costs</h5>
-                    <p>Starts from $199/per employee, per month, no matter your company size.</p>
+                  <div className="grid grid-cols-3 items-center">
+                    <div className="text-left font-semibold">Employee Costs</div>
+                    <div className="col-span-2 text-left">Starts from $199/per employee, per month. No matter your company size.</div>
                   </div>
                   
-                  <div>
-                    <h5 className="font-semibold mb-2">Contractor Costs</h5>
-                    <p>Free to manage contractors and $25 per contractor, per month to process payments.</p>
-                  </div>
-                  
-                  <div>
-                    <h5 className="font-semibold mb-2">Global Coverage</h5>
-                    <p>Employ talent in 185+ countries.</p>
-                  </div>
-                  
-                  <div>
-                    <h5 className="font-semibold mb-2">Visas and Work Permits</h5>
-                    <p>Provides Visas and Work Permits in 85+ countries (the largest coverage in the world for EOR).</p>
-                  </div>
-                  
-                  <div>
-                    <h5 className="font-semibold mb-2">Customer Support</h5>
-                    <p>Dedicated account manager, 24/5 customer service, help articles, and online chat. Get things solved in hours, not days.</p>
+                  <div className="grid grid-cols-3 items-center">
+                    <div className="text-left font-semibold">Contractor Costs</div>
+                    <div className="col-span-2 text-left">Free to manage contractors and $25 per contractor, per month to process payments.</div>
                   </div>
                 </div>
               </div>
@@ -106,35 +89,20 @@ export default function NewsletterSignup() {
               <div className="bg-white p-6 rounded-lg text-gray-800">
                 <h4 className="text-xl font-bold text-center mb-6">Other providers</h4>
                 
-                <div className="space-y-6">
-                  <div>
-                    <h5 className="font-semibold mb-2">Pricing Model</h5>
-                    <p>Other hidden fees and costs.</p>
+                <div className="space-y-8">
+                  <div className="grid grid-cols-3 items-center">
+                    <div className="text-left font-semibold">Pricing Model</div>
+                    <div className="col-span-2 text-left">Other hidden fees and costs.</div>
                   </div>
                   
-                  <div>
-                    <h5 className="font-semibold mb-2">Employee Costs</h5>
-                    <p>Starts from $599/per employee, per month and can go up to $1000/per employee, per month.</p>
+                  <div className="grid grid-cols-3 items-center">
+                    <div className="text-left font-semibold">Employee Costs</div>
+                    <div className="col-span-2 text-left">Starts from $599/per employee, per month and can go up to $1000/per employee, per month.</div>
                   </div>
                   
-                  <div>
-                    <h5 className="font-semibold mb-2">Contractor Costs</h5>
-                    <p>2× (or more) the cost per contractor to manage and process payments.</p>
-                  </div>
-                  
-                  <div>
-                    <h5 className="font-semibold mb-2">Global Coverage</h5>
-                    <p>Hire employees in 150+ countries.</p>
-                  </div>
-                  
-                  <div>
-                    <h5 className="font-semibold mb-2">Visas and Work Permits</h5>
-                    <p>Provide Visas in 25+ countries, or not at all.</p>
-                  </div>
-                  
-                  <div>
-                    <h5 className="font-semibold mb-2">Customer Support</h5>
-                    <p>24/5 support, live chat, email, or web form fill out.</p>
+                  <div className="grid grid-cols-3 items-center">
+                    <div className="text-left font-semibold">Contractor Costs</div>
+                    <div className="col-span-2 text-left">2× (or more) the cost per contractor to manage and process payments.</div>
                   </div>
                 </div>
               </div>
