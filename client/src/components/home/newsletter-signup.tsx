@@ -64,7 +64,7 @@ export default function NewsletterSignup() {
             
             <div className="flex justify-center mt-8">
               {/* talentfi Column */}
-              <div className="bg-[#4caf50] p-6 rounded-lg text-white max-w-lg">
+              <div className="bg-[#FF9500] p-6 rounded-lg text-white max-w-lg">
                 <h4 className="text-xl font-bold text-center mb-6">talentfi: $500</h4>
                 
                 <div className="space-y-4">
