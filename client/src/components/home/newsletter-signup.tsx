@@ -65,7 +65,7 @@ export default function NewsletterSignup() {
             <div className="grid md:grid-cols-2 gap-8 mt-8">
               {/* talentfi Column */}
               <div className="bg-[#4caf50] p-6 rounded-lg text-white">
-                <h4 className="text-xl font-bold text-center mb-6">talentfi</h4>
+                <h4 className="text-xl font-bold text-center mb-6">talentfi: $500</h4>
                 
                 <div className="space-y-8">
                   <div className="grid grid-cols-3 items-center">
