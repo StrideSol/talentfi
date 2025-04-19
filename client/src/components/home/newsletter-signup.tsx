@@ -62,9 +62,9 @@ export default function NewsletterSignup() {
           <div className="bg-[#f9f9f9] text-black p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">Save up to 80% with talentfi</h3>
             
-            <div className="grid md:grid-cols-2 gap-8 mt-8">
+            <div className="flex justify-center mt-8">
               {/* talentfi Column */}
-              <div className="bg-[#4caf50] p-6 rounded-lg text-white">
+              <div className="bg-[#4caf50] p-6 rounded-lg text-white max-w-lg">
                 <h4 className="text-xl font-bold text-center mb-6">talentfi: $500</h4>
                 
                 <div className="space-y-8">
@@ -83,11 +83,6 @@ export default function NewsletterSignup() {
                     <div className="col-span-2 text-left">Free to manage contractors and $25 per contractor, per month to process payments.</div>
                   </div>
                 </div>
-              </div>
-              
-              {/* Other providers Column */}
-              <div className="bg-white p-6 rounded-lg text-gray-800">
-                <h4 className="text-xl font-bold text-center">Other providers: $700</h4>
               </div>
             </div>
           </div>
