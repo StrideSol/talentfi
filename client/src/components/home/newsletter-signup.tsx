@@ -75,7 +75,7 @@ export default function NewsletterSignup() {
                   
                   <div className="grid grid-cols-3 items-start py-2">
                     <div className="text-left font-semibold pt-1">Once-off recruitment fee</div>
-                    <div className="col-span-2 text-left pl-6">Fixed flat rate. No hidden fees.</div>
+                    <div className="col-span-2 text-left pl-6">10% of annual salary e.g. $30 000 yearly salary, recruitment cost $3000</div>
                   </div>
                   
                   <div className="grid grid-cols-3 items-start py-2">
