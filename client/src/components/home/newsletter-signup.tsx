@@ -80,7 +80,7 @@ export default function NewsletterSignup() {
                   
                   <div className="grid grid-cols-3 items-start py-2">
                     <div className="text-left font-semibold pt-1">Remote training</div>
-                    <div className="col-span-2 text-left pl-6">Included in package. No additional fees.</div>
+                    <div className="col-span-2 text-left pl-6">Remote work readiness training provided free for employees.</div>
                   </div>
                 </div>
               </div>
