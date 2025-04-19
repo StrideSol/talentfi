@@ -57,43 +57,7 @@ export default function NewsletterSignup() {
     <section className="py-16 bg-[#0047FF] text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="mb-8 text-xl">
-            Enter your email to receive our detailed pricing packages and save up to 65% compared to hiring in the USA.
-          </p>
-
-          <Form {...form}>
-            <form 
-              onSubmit={form.handleSubmit(onSubmit)} 
-              className="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto"
-            >
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem className="flex-1">
-                    <FormControl>
-                      <Input
-                        type="email"
-                        placeholder="Your email address"
-                        {...field}
-                        className="py-3 px-4 rounded-md text-[#2d2d2d] focus:outline-none w-full"
-                      />
-                    </FormControl>
-                    <FormMessage className="text-white bg-red-500 bg-opacity-20 mt-1 px-2 py-1 rounded text-sm" />
-                  </FormItem>
-                )}
-              />
-              <Button
-                type="submit"
-                disabled={isPending}
-                className="bg-[#FF9500] text-white py-3 px-8 rounded-md font-semibold hover:bg-opacity-90 transition"
-              >
-                {isPending ? "Requesting..." : "Get Pricing"}
-              </Button>
-            </form>
-          </Form>
-
-          <p className="text-sm mt-4 opacity-80">Transparent pricing with no hidden fees. Includes full compliance and payroll services.</p>
+          <h2 className="text-3xl font-bold">Pricing</h2>
         </div>
       </div>
     </section>
