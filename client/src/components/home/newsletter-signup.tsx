@@ -70,12 +70,12 @@ export default function NewsletterSignup() {
                 <div className="space-y-8">
                   <div className="grid grid-cols-3 items-center">
                     <div className="text-left font-semibold">Pricing Model</div>
-                    <div className="col-span-2 text-left">Fixed flat rate. No hidden fees.</div>
+                    <div className="col-span-2 text-left">Flat fee of $500 per employee per month</div>
                   </div>
                   
                   <div className="grid grid-cols-3 items-center">
                     <div className="text-left font-semibold">Employee Costs</div>
-                    <div className="col-span-2 text-left">Starts from $199/per employee, per month. No matter your company size.</div>
+                    <div className="col-span-2 text-left">Fixed flat rate. No hidden fees.</div>
                   </div>
                   
                   <div className="grid grid-cols-3 items-center">
