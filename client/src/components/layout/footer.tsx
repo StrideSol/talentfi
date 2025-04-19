@@ -77,9 +77,9 @@ export default function Footer() {
               </li>
             </ul>
             <img 
-              src="/images/talentfilogo.png" 
+              src="/images/talentfilogo_new.png" 
               alt="talentfi logo" 
-              className="mt-4 h-24 w-auto"
+              className="mt-4 h-16 w-auto"
             />
           </div>
         </div>
