@@ -70,7 +70,7 @@ export default function NewsletterSignup() {
                 <div className="space-y-8">
                   <div className="grid grid-cols-3 items-center">
                     <div className="text-left font-semibold">Pricing Model</div>
-                    <div className="col-span-2 text-left">Flat fee of $500 per employee per month</div>
+                    <div className="col-span-2 text-left">Flat fee of $500 per employee per month. Other providers: $700</div>
                   </div>
                   
                   <div className="grid grid-cols-3 items-center">
