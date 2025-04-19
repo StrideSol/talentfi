@@ -58,8 +58,8 @@ export default function HeroCarousel() {
             <div className="w-full md:w-2/3 p-6 md:p-12 flex items-center text-white">
               <div>
                 <h1 className="text-3xl md:text-5xl font-bold mb-4">
-                  <span className="text-white">South Africa's premier</span> <span className="text-[#FF9500] font-bold">Employer of Record</span><br/>
-                  <span className="text-white">solution</span>
+                  <span className="text-white">Global seamless hiring</span><br/>
+                  <span className="text-white">saving you up to</span> <span className="text-[#FF9500] font-bold">65%</span>
                 </h1>
                 <p className="text-lg md:text-xl mb-8">{defaultSlide.description}</p>
                 <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
@@ -84,7 +84,7 @@ export default function HeroCarousel() {
             <div className="w-full md:w-1/3 bg-gray-300 md:absolute md:right-0 md:top-0 md:bottom-0 h-64 md:h-auto">
               <img
                 src={defaultSlide.imageUrl}
-                alt="South African Employer of Record services"
+                alt="Global seamless hiring services"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -108,8 +108,8 @@ export default function HeroCarousel() {
           <div className="w-full md:w-2/3 p-6 md:p-12 flex items-center text-white">
             <div>
               <h1 className="text-3xl md:text-5xl font-bold mb-4">
-                <span className="text-white">South Africa's premier</span> <span className="text-[#FF9500] font-bold">Employer of Record</span><br/>
-                <span className="text-white">solution</span>
+                <span className="text-white">Global seamless hiring</span><br/>
+                <span className="text-white">saving you up to</span> <span className="text-[#FF9500] font-bold">65%</span>
               </h1>
               <p className="text-lg md:text-xl mb-8">{currentSlide.description}</p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
@@ -134,7 +134,7 @@ export default function HeroCarousel() {
           <div className="w-full md:w-1/3 bg-gray-300 md:absolute md:right-0 md:top-0 md:bottom-0 h-64 md:h-auto">
             <img
               src={currentSlide.imageUrl}
-              alt="South African Employer of Record services"
+              alt="Global seamless hiring services"
               className="w-full h-full object-cover"
             />
           </div>
