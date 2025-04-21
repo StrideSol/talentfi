@@ -4,39 +4,41 @@ export default function AboutSection() {
   return (
     <section id="about">
       {/* Purple Hero Banner */}
-      <div className="bg-[#5000FF] text-white py-20 overflow-hidden relative">
-        <div className="container mx-auto px-4 md:px-6 relative z-10 flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 mb-10 md:mb-0">
-            <h2 className="text-5xl font-bold mb-4">
-              Talent is everywhere,<br />
-              opportunity should<br />
-              be too
-            </h2>
-            <p className="text-xl">
-              Remote eliminates barriers to international hiring so<br />
-              great companies can work with great people, no<br />
-              matter where those people are.
-            </p>
-          </div>
-          <div className="md:w-1/2 flex justify-center md:justify-end">
-            <img 
-              src="attached_assets/image_1745234035651.png" 
-              alt="Global connectivity" 
-              className="max-w-full md:max-w-md" 
-            />
+      <div className="bg-[#5000FF] text-white py-16 relative">
+        <div className="container mx-auto px-4 md:px-10">
+          <div className="w-full flex flex-col md:flex-row">
+            <div className="md:w-2/3">
+              <h2 className="text-5xl font-bold mb-6">
+                Talent is everywhere,<br />
+                opportunity should<br />
+                be too
+              </h2>
+              <p className="text-xl">
+                Remote eliminates barriers to international hiring so<br />
+                great companies can work with great people, no<br />
+                matter where those people are.
+              </p>
+            </div>
+            <div className="md:w-1/3 flex justify-end items-center mt-8 md:mt-0">
+              <img 
+                src="/attached_assets/image_1745234035651.png" 
+                alt="Global connectivity" 
+                className="max-w-full object-contain" 
+              />
+            </div>
           </div>
         </div>
       </div>
 
-      {/* About Content Section */}
+      {/* About Title Section */}
       <div className="bg-white py-16">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-12">
+          <div className="text-center mb-10">
             <h2 className="text-3xl font-bold mb-2">About Talentfi</h2>
             <p className="text-[#4a5568]">Connecting South African talent with global opportunities</p>
           </div>
 
-          <div className="mb-10 text-center">
+          <div className="mb-14 text-center">
             <p className="text-[#0047FF] text-2xl font-semibold">
               We believe talent knows no borders—and we're here to ensure opportunity doesn't either.
             </p>
