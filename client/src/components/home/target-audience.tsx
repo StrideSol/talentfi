@@ -3,7 +3,8 @@ export default function TargetAudience() {
     <section id="hire-smarter" className="py-12 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-2 text-[#0047FF]">Hire smarter, grow faster</h2>
+          <h2 className="text-3xl font-bold mb-2 text-[#0047FF]">Services</h2>
+          <h3 className="text-2xl font-bold mb-2">Hire smarter, grow faster</h3>
           <p className="text-[#4a5568]">Whether you're scaling your team, entering new markets, or tackling high-volume hiring, Talentfi simplifies every step to help you build great teams quickly and confidently.</p>
         </div>
 
