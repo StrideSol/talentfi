@@ -54,7 +54,7 @@ export default function Navbar() {
       <div className="bg-[#0047FF] text-white py-2 px-4 md:px-6">
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-sm hidden md:block mr-8">
-            Your trusted <span className="text-[#FF9500] font-bold">Employer of Record</span> in South Africa — hire, pay, and manage talent with full compliance
+            Your trusted <span className="text-[#FF9500] font-bold">employment partner</span> in South Africa — hire, pay, and manage talent with full compliance
           </div>
           <div className="flex space-x-4 text-sm">
             <a href="#" className="hover:underline">
@@ -91,7 +91,6 @@ export default function Navbar() {
                 <div className="h-10 w-48 bg-white flex items-center cursor-pointer">
                   <span className="text-[#0047FF] font-bold text-3xl">talent</span>
                   <span className="text-[#FF9500] font-bold text-3xl">fi</span>
-                  <span className="text-white font-bold text-xs ml-3 bg-[#FF9500] px-2 py-0.5 rounded-md tracking-wide">EOR</span>
                 </div>
               </Link>
             </div>
@@ -187,7 +186,7 @@ export default function Navbar() {
               <input
                 type="text"
                 className="w-full py-3 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#0047FF]"
-                placeholder="Search for South African EOR services and compliance guides..."
+                placeholder="Search for South African employment services and compliance guides..."
                 autoFocus
               />
               <Button className="absolute right-1 top-1 bg-[#0047FF] hover:bg-[#0035C8]">

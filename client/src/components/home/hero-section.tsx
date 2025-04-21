@@ -13,7 +13,7 @@ export default function HeroSection() {
                 <span className="text-white">saving you up to</span> <span className="text-[#FF9500] font-bold">65%</span>
               </h1>
               <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-                Your trusted South African employment partner. Our local EOR services make hiring simple and fully compliant.
+                Your trusted South African employment partner. Our local employment services make hiring simple and fully compliant.
               </p>
               <div className="flex flex-col lg:flex-row items-center justify-center space-y-8 lg:space-y-0 mt-10 max-w-5xl mx-auto">
                 {/* USA Salary Block - Left */}
