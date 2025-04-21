@@ -61,6 +61,7 @@ export default function NewsletterSignup() {
 
   return (
     <section 
+      id="pricing"
       className="py-16 text-white relative overflow-hidden" 
       style={{ background: "linear-gradient(90deg, #00C4C4 0%, #0047FF 100%)" }}
     >

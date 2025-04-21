@@ -31,12 +31,12 @@ const navItems: NavItem[] = [
     href: "#roles-we-source"
   },
   {
-    title: "About",
-    href: "#about"
+    title: "Pricing",
+    href: "#pricing"
   },
   {
-    title: "Pricing",
-    href: "#"
+    title: "About",
+    href: "#about"
   },
   { 
     title: "Contact", 
@@ -99,15 +99,9 @@ export default function Navbar() {
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-6">
               {navItems.map((item, index) => (
-                item.title === "Services" || item.title === "Roles We Source" || item.title === "About" ? (
-                  <a key={index} href={item.href || "#"} className="font-semibold hover:text-[#0047FF] cursor-pointer">
-                    {item.title}
-                  </a>
-                ) : (
-                  <Link key={index} href={item.href || "#"}>
-                    <div className="font-semibold hover:text-[#0047FF] cursor-pointer">{item.title}</div>
-                  </Link>
-                )
+                <a key={index} href={item.href || "#"} className="font-semibold hover:text-[#0047FF] cursor-pointer">
+                  {item.title}
+                </a>
               ))}
             </div>
 
