@@ -51,7 +51,8 @@ export default function CustomerJourney() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-2 text-[#0047FF]">Roles We Source</h2>
           <p className="text-[#333333] max-w-4xl mx-auto mb-6">
-            From startups to enterprises, businesses worldwide have used Talentfi to grow remote teams with professionals. 
+            From startups to enterprises, businesses worldwide have used Talentfi to grow remote teams with professionals.
+            <br /><br />
             Unlock access to South Africa's top talent in IT, Marketing, Accounting, and more through our compliant and cost-effective Employer of Record solutions. Focus on growth while we handle payroll and compliance, making your expansion seamless and efficient.
           </p>
         </div>
