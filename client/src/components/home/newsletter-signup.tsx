@@ -82,16 +82,22 @@ export default function NewsletterSignup() {
           </div>
 
           <div className="space-y-6 md:w-2/3 md:pl-8 md:border-l border-white/30">
-            {benefits.map((benefit, index) => (
-              <div className="flex items-center" key={index}>
-                <div className="bg-white/30 backdrop-blur-sm p-2 rounded-full mr-4">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
+            {benefits.map((benefit, index) => {
+              const isSubBullet = benefit.startsWith("•");
+              
+              return (
+                <div className={`flex items-center ${isSubBullet ? "ml-10" : ""}`} key={index}>
+                  {!isSubBullet && (
+                    <div className="bg-white/30 backdrop-blur-sm p-2 rounded-full mr-4">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                  )}
+                  <div className="font-semibold">{benefit}</div>
                 </div>
-                <div className="font-semibold">{benefit}</div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
@@ -100,11 +106,12 @@ export default function NewsletterSignup() {
 }
 
 const benefits = [
-  "Hire without opening a local entity",
-  "Guided onboarding",
-  "Local payroll paid on time, every time",
-  "Built-in security and compliance",
-  "Flexible, localized benefits",
-  "Offer equity incentives with tax assistance",
-  "Dedicated experts for local support"
+  "No entity setup required",
+  "Seamless onboarding from offer to start",
+  "Always-on-time payroll, locally compliant",
+  "Once off recruitment fee of 10% of annual package",
+  "• 6-month replacement guarantee",
+  "Skills Assessments included in recruitment fee.",
+  "Local HR advisors whenever you need them",
+  "• Remote Work Readiness Training provided free for employee"
 ];
