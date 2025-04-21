@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { IconButton } from "@/components/ui/icon-button";
@@ -8,7 +7,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { 
-  Search, 
   Menu, 
   Facebook, 
   Twitter, 
@@ -53,7 +51,6 @@ const navItems: NavItem[] = [
 ];
 
 export default function Navbar() {
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [, setLocation] = useLocation();
 
   return (
@@ -118,15 +115,8 @@ export default function Navbar() {
               ))}
             </div>
 
-            {/* Search and Mobile Menu */}
+            {/* Mobile Menu */}
             <div className="flex items-center">
-              <IconButton 
-                onClick={() => setIsSearchOpen(!isSearchOpen)} 
-                className="text-[#2d2d2d] p-2 hover:text-[#0047FF]"
-                aria-label="Search"
-              >
-                <Search size={20} />
-              </IconButton>
               <Sheet>
                 <SheetTrigger asChild>
                   <IconButton 
@@ -177,33 +167,6 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      
-      {/* Search Overlay (conditionally rendered) */}
-      {isSearchOpen && (
-        <div className="fixed inset-0 z-50 bg-white bg-opacity-95 flex items-center justify-center p-4">
-          <div className="w-full max-w-2xl">
-            <div className="flex justify-between items-center mb-6">
-              <h2 className="text-2xl font-bold">Search</h2>
-              <IconButton onClick={() => setIsSearchOpen(false)}>
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-              </IconButton>
-            </div>
-            <div className="relative">
-              <input
-                type="text"
-                className="w-full py-3 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#0047FF]"
-                placeholder="Search for South African employment services and compliance guides..."
-                autoFocus
-              />
-              <Button className="absolute right-1 top-1 bg-[#0047FF] hover:bg-[#0035C8]">
-                <Search className="h-5 w-5" />
-              </Button>
-            </div>
-          </div>
-        </div>
-      )}
     </header>
   );
 }
