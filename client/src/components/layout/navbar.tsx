@@ -3,12 +3,6 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { IconButton } from "@/components/ui/icon-button";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import {
   Sheet,
   SheetContent,
   SheetTrigger,
@@ -16,18 +10,18 @@ import {
 import { 
   Search, 
   Menu, 
-  ChevronDown, 
   Facebook, 
   Twitter, 
   Instagram, 
   Youtube 
 } from "lucide-react";
 
-const navItems = [
-  {
-    title: "About",
-    href: "#about"
-  },
+type NavItem = {
+  title: string;
+  href: string;
+};
+
+const navItems: NavItem[] = [
   {
     title: "Services",
     href: "#hire-smarter"
@@ -37,14 +31,17 @@ const navItems = [
     href: "#roles-we-source"
   },
   {
-    title: "Pricing",
-    items: [
-      { title: "Cape Town", href: "#" },
-      { title: "Johannesburg", href: "#" },
-      { title: "Durban", href: "#" },
-    ],
+    title: "About",
+    href: "#about"
   },
-  { title: "Contact", href: "#" },
+  {
+    title: "Pricing",
+    href: "#"
+  },
+  { 
+    title: "Contact", 
+    href: "#" 
+  },
 ];
 
 export default function Navbar() {
@@ -102,33 +99,14 @@ export default function Navbar() {
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-6">
               {navItems.map((item, index) => 
-                item.items ? (
-                  <DropdownMenu key={index}>
-                    <DropdownMenuTrigger className="font-semibold hover:text-[#0047FF] flex items-center">
-                      {item.title} <ChevronDown className="ml-1 h-4 w-4" />
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent align="center" className="w-48">
-                      {item.items.map((subItem, subIndex) => (
-                        <DropdownMenuItem key={subIndex} asChild>
-                          <Link href={subItem.href}>
-                            <div className="block w-full px-4 py-2 text-sm hover:bg-[#f7f7f7] cursor-pointer">
-                              {subItem.title}
-                            </div>
-                          </Link>
-                        </DropdownMenuItem>
-                      ))}
-                    </DropdownMenuContent>
-                  </DropdownMenu>
+                item.title === "Services" || item.title === "Roles We Source" || item.title === "About" ? (
+                  <a key={index} href={item.href || "#"} className="font-semibold hover:text-[#0047FF] cursor-pointer">
+                    {item.title}
+                  </a>
                 ) : (
-                  item.title === "Services" || item.title === "Roles We Source" || item.title === "About" ? (
-                    <a key={index} href={item.href || "#"} className="font-semibold hover:text-[#0047FF] cursor-pointer">
-                      {item.title}
-                    </a>
-                  ) : (
-                    <Link key={index} href={item.href || "#"}>
-                      <div className="font-semibold hover:text-[#0047FF] cursor-pointer">{item.title}</div>
-                    </Link>
-                  )
+                  <Link key={index} href={item.href || "#"}>
+                    <div className="font-semibold hover:text-[#0047FF] cursor-pointer">{item.title}</div>
+                  </Link>
                 )
               )}
             </div>
@@ -153,32 +131,15 @@ export default function Navbar() {
                 </SheetTrigger>
                 <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                   <div className="flex flex-col gap-6 py-4">
-                    {navItems.map((item, index) => 
-                      item.items ? (
-                        <div key={index} className="space-y-3">
-                          <h4 className="font-bold">{item.title}</h4>
-                          <div className="pl-4 space-y-2">
-                            {item.items.map((subItem, subIndex) => (
-                              <Link key={subIndex} href={subItem.href}>
-                                <div className="block text-sm hover:text-[#0047FF] cursor-pointer">
-                                  {subItem.title}
-                                </div>
-                              </Link>
-                            ))}
-                          </div>
-                        </div>
-                      ) : (
-                        item.title === "Services" || item.title === "Roles We Source" || item.title === "About" ? (
-                          <a key={index} href={item.href || "#"} className="font-bold hover:text-[#0047FF] cursor-pointer">
-                            {item.title}
-                          </a>
-                        ) : (
-                          <Link key={index} href={item.href || "#"}>
-                            <div className="font-bold hover:text-[#0047FF] cursor-pointer">{item.title}</div>
-                          </Link>
-                        )
-                      )
-                    )}
+                    {navItems.map((item, index) => (
+                      <a 
+                        key={index} 
+                        href={item.href || "#"} 
+                        className="font-bold hover:text-[#0047FF] cursor-pointer"
+                      >
+                        {item.title}
+                      </a>
+                    ))}
                     <div className="mt-4 space-y-2">
                       <Button className="w-full bg-[#0047FF] hover:bg-[#0035C8]">
                         Get a Quote
