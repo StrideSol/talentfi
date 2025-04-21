@@ -60,7 +60,10 @@ export default function NewsletterSignup() {
   };
 
   return (
-    <section className="py-16 bg-[#00C4C4] text-[#001B3F]">
+    <section 
+      className="py-16 text-[#001B3F] relative overflow-hidden" 
+      style={{ background: "linear-gradient(90deg, #00C4C4 0%, #0047FF 100%)" }}
+    >
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center mb-10">
           <h2 className="text-3xl font-bold mb-4">Pricing</h2>
