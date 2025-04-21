@@ -50,8 +50,9 @@ export default function CustomerJourney() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-2 text-[#0047FF]">Roles We Source</h2>
-          <p className="text-[#333333] max-w-2xl mx-auto">
-            Top specialized positions we regularly source for our clients in South Africa with up to 65% cost savings compared to US-based talent.
+          <p className="text-[#333333] max-w-4xl mx-auto mb-6">
+            From startups to enterprises, businesses worldwide have used Talentfi to grow remote teams with professionals. 
+            Unlock access to South Africa's top talent in IT, Marketing, Accounting, and more through our compliant and cost-effective Employer of Record solutions. Focus on growth while we handle payroll and compliance, making your expansion seamless and efficient.
           </p>
         </div>
 
