@@ -7,8 +7,12 @@ import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import CarouselAdmin from "@/pages/admin/carousel";
 import AdminLogin from "@/pages/admin/login";
+import { useScrollTop } from "@/hooks/use-scroll-top";
 
 function Router() {
+  // This hook ensures that we scroll to top when the route changes
+  useScrollTop();
+  
   return (
     <Switch>
       <Route path="/" component={Home} />
