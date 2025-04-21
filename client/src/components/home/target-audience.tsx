@@ -1,6 +1,6 @@
 export default function TargetAudience() {
   return (
-    <section className="py-12 bg-white">
+    <section id="hire-smarter" className="py-12 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-2 text-[#0047FF]">Hire smarter, grow faster</h2>
