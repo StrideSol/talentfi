@@ -37,6 +37,10 @@ const navItems = [
     href: "#hire-smarter"
   },
   {
+    title: "Roles We Source",
+    href: "#roles-we-source"
+  },
+  {
     title: "Regions",
     items: [
       { title: "Cape Town", href: "#" },
@@ -137,7 +141,7 @@ export default function Navbar() {
                     </DropdownMenuContent>
                   </DropdownMenu>
                 ) : (
-                  item.title === "Services" ? (
+                  item.title === "Services" || item.title === "Roles We Source" ? (
                     <a key={index} href={item.href || "#"} className="font-semibold hover:text-[#0047FF] cursor-pointer">
                       {item.title}
                     </a>
@@ -185,7 +189,7 @@ export default function Navbar() {
                           </div>
                         </div>
                       ) : (
-                        item.title === "Services" ? (
+                        item.title === "Services" || item.title === "Roles We Source" ? (
                           <a key={index} href={item.href || "#"} className="font-bold hover:text-[#0047FF] cursor-pointer">
                             {item.title}
                           </a>

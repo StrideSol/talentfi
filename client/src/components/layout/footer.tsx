@@ -40,6 +40,7 @@ export default function Footer() {
               <li><a href="#" className="text-gray-300 hover:text-white">About Us</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Our Services</a></li>
               <li><a href="#hire-smarter" className="text-gray-300 hover:text-white">Hire Smarter, Grow Faster</a></li>
+              <li><a href="#roles-we-source" className="text-gray-300 hover:text-white">Roles We Source</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Global Compliance</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Case Studies</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Resources</a></li>
