@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="bg-[#2d2d2d] text-white pt-12 pb-6">
       <div className="container mx-auto px-4 md:px-6">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {/* About Column */}
           <div>
             <h3 className="text-xl font-bold mb-4">About talentfi</h3>
@@ -45,19 +45,6 @@ export default function Footer() {
               <li><a href="#" className="text-gray-300 hover:text-white">Case Studies</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Resources</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Contact Us</a></li>
-            </ul>
-          </div>
-
-          {/* Explore Regions */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">Explore South Africa</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white">Cape Town</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Johannesburg</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Durban</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Pretoria</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Port Elizabeth</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">View All Regions</a></li>
             </ul>
           </div>
 
