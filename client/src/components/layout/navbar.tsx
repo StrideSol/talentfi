@@ -37,30 +37,13 @@ const navItems = [
     href: "#roles-we-source"
   },
   {
-    title: "Regions",
+    title: "Pricing",
     items: [
       { title: "Cape Town", href: "#" },
       { title: "Johannesburg", href: "#" },
       { title: "Durban", href: "#" },
     ],
   },
-  {
-    title: "Resources",
-    items: [
-      { title: "Guides", href: "#" },
-      { title: "Webinars", href: "#" },
-      { title: "Compliance Library", href: "#" },
-    ],
-  },
-  {
-    title: "Insights",
-    items: [
-      { title: "Case Studies", href: "#" },
-      { title: "Whitepapers", href: "#" },
-      { title: "Industry Reports", href: "#" },
-    ],
-  },
-  { title: "Blog", href: "#" },
   { title: "Contact", href: "#" },
 ];
 
@@ -185,20 +168,14 @@ export default function Navbar() {
                           </div>
                         </div>
                       ) : (
-                        item.title === "Services" || item.title === "Roles We Source" ? (
+                        item.title === "Services" || item.title === "Roles We Source" || item.title === "About" ? (
                           <a key={index} href={item.href || "#"} className="font-bold hover:text-[#0047FF] cursor-pointer">
                             {item.title}
                           </a>
                         ) : (
-                          item.title === "About" ? (
-                            <a key={index} href={item.href || "#"} className="font-bold hover:text-[#0047FF] cursor-pointer">
-                              {item.title}
-                            </a>
-                          ) : (
-                            <Link key={index} href={item.href || "#"}>
-                              <div className="font-bold hover:text-[#0047FF] cursor-pointer">{item.title}</div>
-                            </Link>
-                          )
+                          <Link key={index} href={item.href || "#"}>
+                            <div className="font-bold hover:text-[#0047FF] cursor-pointer">{item.title}</div>
+                          </Link>
                         )
                       )
                     )}
