@@ -24,19 +24,19 @@ type NavItem = {
 const navItems: NavItem[] = [
   {
     title: "Services",
-    href: "#hire-smarter"
+    href: "/#hire-smarter"
   },
   {
     title: "Roles We Source",
-    href: "#roles-we-source"
+    href: "/#roles-we-source"
   },
   {
     title: "Pricing",
-    href: "#pricing"
+    href: "/#pricing"
   },
   {
     title: "About",
-    href: "#about"
+    href: "/#about"
   },
   { 
     title: "Contact", 
