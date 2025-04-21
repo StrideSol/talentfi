@@ -34,12 +34,7 @@ const navItems = [
   },
   {
     title: "Services",
-    items: [
-      { title: "South African EOR Solutions", href: "#" },
-      { title: "Contractor Management", href: "#" },
-      { title: "South African Payroll", href: "#" },
-      { title: "Hire Smarter, Grow Faster", href: "#hire-smarter" },
-    ],
+    href: "#hire-smarter"
   },
   {
     title: "Regions",
