@@ -113,5 +113,5 @@ const benefits = [
   "6-month replacement guarantee",
   "Skills Assessments included in recruitment fee.",
   "Local HR advisors whenever you need them",
-  "• Remote Work Readiness Training provided free for employee"
+  "Remote Work Readiness Training provided free for employee"
 ];
