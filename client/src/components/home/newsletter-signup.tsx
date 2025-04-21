@@ -110,7 +110,7 @@ const benefits = [
   "Seamless onboarding from offer to start",
   "Always-on-time payroll, locally compliant",
   "Once off recruitment fee of 10% of annual package",
-  "• 6-month replacement guarantee",
+  "6-month replacement guarantee",
   "Skills Assessments included in recruitment fee.",
   "Local HR advisors whenever you need them",
   "• Remote Work Readiness Training provided free for employee"
