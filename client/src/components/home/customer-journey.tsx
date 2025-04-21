@@ -1,15 +1,4 @@
-import { ChevronDown } from "lucide-react";
-import { useState } from "react";
-
 export default function CustomerJourney() {
-  const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({});
-
-  const toggleItem = (id: string) => {
-    setExpandedItems(prev => ({
-      ...prev,
-      [id]: !prev[id]
-    }));
-  };
 
   const categories = [
     {
@@ -69,26 +58,11 @@ export default function CustomerJourney() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {categories.map((category) => (
             <div key={category.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <h3 className="text-xl font-bold text-[#0047FF] p-4">{category.title}</h3>
-              <div className="divide-y divide-gray-200">
+              <h3 className="text-xl font-bold text-[#0047FF] p-4 border-b border-gray-200">{category.title}</h3>
+              <div className="p-0">
                 {category.items.map((item, index) => (
-                  <div key={index} className="cursor-pointer">
-                    <div
-                      className="flex justify-between items-center p-4 hover:bg-gray-50"
-                      onClick={() => toggleItem(`${category.id}-${index}`)}
-                    >
-                      <span className="text-[#333333]">{item}</span>
-                      <ChevronDown 
-                        className={`w-5 h-5 text-[#0047FF] transition-transform ${
-                          expandedItems[`${category.id}-${index}`] ? 'transform rotate-180' : ''
-                        }`} 
-                      />
-                    </div>
-                    {expandedItems[`${category.id}-${index}`] && (
-                      <div className="p-4 bg-gray-50 text-sm text-[#333333]">
-                        <p>Qualified professionals with experience in South African and international markets. Up to 65% cost savings compared to US-based talent.</p>
-                      </div>
-                    )}
+                  <div key={index} className="p-4 hover:bg-gray-50 border-b border-gray-200 last:border-b-0">
+                    <span className="text-[#333333]">{item}</span>
                   </div>
                 ))}
               </div>
