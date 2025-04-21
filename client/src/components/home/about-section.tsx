@@ -13,14 +13,14 @@ export default function AboutSection() {
           <div className="w-full flex flex-col md:flex-row">
             <div className="md:w-2/3">
               <h2 className="text-5xl font-bold mb-6">
-                Talent is everywhere,<br />
-                opportunity should<br />
-                be too
+                Talent is global.<br />
+                Opportunity should<br />
+                be too.
               </h2>
               <p className="text-xl">
-                Remote eliminates barriers to international hiring so<br />
-                great companies can work with great people, no<br />
-                matter where those people are.
+                We remove the barriers to international hiring—so<br />
+                exceptional companies can connect with exceptional<br />
+                talent, wherever they are.
               </p>
             </div>
             <div className="md:w-1/3 flex justify-end items-center mt-8 md:mt-0">
