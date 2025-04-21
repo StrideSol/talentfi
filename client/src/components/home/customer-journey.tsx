@@ -46,7 +46,7 @@ export default function CustomerJourney() {
   ];
 
   return (
-    <section id="roles-we-source" className="py-16 bg-[#F0F0F0]">
+    <section id="roles-we-source" className="py-16 bg-[#E0E0E0]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-2 text-[#0047FF]">Roles We Source</h2>
