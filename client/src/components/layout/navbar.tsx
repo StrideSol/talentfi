@@ -120,7 +120,7 @@ export default function Navbar() {
                     </DropdownMenuContent>
                   </DropdownMenu>
                 ) : (
-                  item.title === "Services" || item.title === "Roles We Source" ? (
+                  item.title === "Services" || item.title === "Roles We Source" || item.title === "About" ? (
                     <a key={index} href={item.href || "#"} className="font-semibold hover:text-[#0047FF] cursor-pointer">
                       {item.title}
                     </a>
