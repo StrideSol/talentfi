@@ -9,6 +9,20 @@ export default function AboutSection() {
           <p className="text-[#4a5568]">Connecting South African talent with global opportunities</p>
         </div>
 
+        <div className="mb-10 text-center">
+          <p className="text-[#0047FF] text-2xl font-semibold">
+            We believe talent knows no borders—and we're here to ensure opportunity doesn't either.
+          </p>
+        </div>
+
+        <div className="mt-8 flex justify-center mb-12">
+          <img 
+            src="attached_assets/image_1745233829405.png" 
+            alt="Global talent concept" 
+            className="rounded-lg shadow-lg max-w-full md:max-w-md lg:max-w-lg" 
+          />
+        </div>
+
         <div className="max-w-3xl mx-auto">
           <div className="prose prose-lg mx-auto">
             <p className="mb-4">
@@ -30,19 +44,7 @@ export default function AboutSection() {
             <p className="mb-4">
               We built an Employer of Record (EOR) platform designed to make hiring South African professionals easy, compliant, and stress-free. From payroll and contracts to benefits and local compliance—we handle the details so companies can focus on building great teams.
             </p>
-            
-            <p className="font-semibold text-[#0047FF]">
-              We believe talent knows no borders—and we're here to ensure opportunity doesn't either.
-            </p>
           </div>
-        </div>
-
-        <div className="mt-12 flex justify-center">
-          <img 
-            src="/attached_assets/image_1745233401639.png" 
-            alt="Global talent concept" 
-            className="rounded-lg shadow-lg max-w-full md:max-w-md lg:max-w-lg" 
-          />
         </div>
       </div>
     </section>
