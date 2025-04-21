@@ -3,8 +3,8 @@ import React from "react";
 export default function AboutSection() {
   return (
     <section id="about">
-      {/* Teal Hero Banner */}
-      <div className="bg-[#7A9392] text-white relative">
+      {/* Light Blue Hero Banner */}
+      <div className="bg-[#c2e2ff] text-black relative">
         <div className="text-center pt-8">
           <h1 className="text-4xl font-bold">About Talentfi</h1>
           <p className="text-xl mt-2">Connecting South African talent with global opportunities</p>
@@ -25,7 +25,7 @@ export default function AboutSection() {
             </div>
             <div className="md:w-1/3 flex justify-end items-center mt-8 md:mt-0">
               <img 
-                src="/images/white-globe.svg" 
+                src="/images/blue-globe.svg" 
                 alt="Global connectivity" 
                 className="w-48 h-48 md:w-64 md:h-64 object-contain" 
               />
