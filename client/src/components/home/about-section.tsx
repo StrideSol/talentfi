@@ -4,8 +4,12 @@ export default function AboutSection() {
   return (
     <section id="about">
       {/* Purple Hero Banner */}
-      <div className="bg-[#5000FF] text-white py-16 relative">
-        <div className="container mx-auto px-4 md:px-10">
+      <div className="bg-[#5000FF] text-white relative">
+        <div className="text-center pt-8">
+          <h1 className="text-4xl font-bold">About Talentfi</h1>
+          <p className="text-xl mt-2">Connecting South African talent with global opportunities</p>
+        </div>
+        <div className="container mx-auto px-4 md:px-10 py-16">
           <div className="w-full flex flex-col md:flex-row">
             <div className="md:w-2/3">
               <h2 className="text-5xl font-bold mb-6">
@@ -30,14 +34,9 @@ export default function AboutSection() {
         </div>
       </div>
 
-      {/* About Title Section */}
+      {/* About Content Section */}
       <div className="bg-white py-16">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold mb-2">About Talentfi</h2>
-            <p className="text-[#4a5568]">Connecting South African talent with global opportunities</p>
-          </div>
-
           <div className="mb-14 text-center">
             <p className="text-[#0047FF] text-2xl font-semibold">
               We believe talent knows no borders—and we're here to ensure opportunity doesn't either.
