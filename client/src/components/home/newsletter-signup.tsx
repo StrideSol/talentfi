@@ -67,7 +67,7 @@ export default function NewsletterSignup() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center mb-10">
           <h2 className="text-3xl font-bold mb-4">Pricing</h2>
-          <p className="text-white/90 max-w-2xl mx-auto">
+          <p className="text-white/90 max-w-2xl mx-auto font-semibold">
             At Talentfi, we emphasize transparency in our pricing, ensuring you know exactly what you're investing in. We offer a competitive one-time hiring fee along with a flat monthly fee, regardless of the complexity of the role. Discover why businesses—from dynamic startups to leading Fortune 500 companies—choose Talentfi for their hiring needs.
           </p>
         </div>
