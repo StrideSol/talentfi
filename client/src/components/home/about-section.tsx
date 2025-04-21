@@ -37,11 +37,6 @@ export default function AboutSection() {
       {/* About Content Section */}
       <div className="bg-white py-16">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="mb-14 text-center">
-            <p className="text-[#0047FF] text-2xl font-semibold">
-              We believe talent knows no borders—and we're here to ensure opportunity doesn't either.
-            </p>
-          </div>
 
           <div className="max-w-3xl mx-auto">
             <div className="prose prose-lg mx-auto">
