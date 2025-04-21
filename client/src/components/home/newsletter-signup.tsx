@@ -56,17 +56,20 @@ export default function NewsletterSignup() {
   return (
     <section className="py-16 bg-[#002255] text-white">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col max-w-6xl mx-auto">
-          <div className="mb-6">
-            <h2 className="text-3xl font-bold">Employer of Record</h2>
-          </div>
+        <div className="max-w-3xl mx-auto text-center mb-10">
+          <h2 className="text-3xl font-bold mb-4">Pricing</h2>
+          <p className="text-white max-w-2xl mx-auto">
+            At Talentfi, we emphasize transparency in our pricing, ensuring you know exactly what you're investing in. We offer a competitive one-time hiring fee along with a flat monthly fee, regardless of the complexity of the role. Discover why businesses—from dynamic startups to leading Fortune 500 companies—choose Talentfi for their hiring needs.
+          </p>
+        </div>
 
-          <div className="mb-10 mt-6">
+        <div className="flex flex-col md:flex-row max-w-6xl mx-auto bg-[#001845] rounded-lg p-8">
+          <div className="md:w-1/3 md:pr-8 flex flex-col justify-center">
             <div className="text-6xl font-bold">$599</div>
             <div className="text-xl mt-2">per employee/month</div>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-6 md:w-2/3 md:pl-8 md:border-l border-blue-800">
             <div className="flex items-center">
               <div className="bg-[#E6F0FF] p-2 rounded-full mr-4">
                 <svg className="w-6 h-6 text-[#002255]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
