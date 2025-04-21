@@ -83,7 +83,7 @@ export default function NewsletterSignup() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <div>{benefit}</div>
+                <div className="font-semibold">{benefit}</div>
               </div>
             ))}
           </div>
