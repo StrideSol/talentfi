@@ -40,7 +40,7 @@ const navItems: NavItem[] = [
   },
   { 
     title: "Contact", 
-    href: "#" 
+    href: "/contact" 
   },
 ];
 
@@ -99,9 +99,15 @@ export default function Navbar() {
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-6">
               {navItems.map((item, index) => (
-                <a key={index} href={item.href || "#"} className="font-semibold hover:text-[#0047FF] cursor-pointer">
-                  {item.title}
-                </a>
+                item.title === "Contact" ? (
+                  <Link key={index} href={item.href}>
+                    <div className="font-semibold hover:text-[#0047FF] cursor-pointer">{item.title}</div>
+                  </Link>
+                ) : (
+                  <a key={index} href={item.href || "#"} className="font-semibold hover:text-[#0047FF] cursor-pointer">
+                    {item.title}
+                  </a>
+                )
               ))}
             </div>
 
@@ -126,13 +132,24 @@ export default function Navbar() {
                 <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                   <div className="flex flex-col gap-6 py-4">
                     {navItems.map((item, index) => (
-                      <a 
-                        key={index} 
-                        href={item.href || "#"} 
-                        className="font-bold hover:text-[#0047FF] cursor-pointer"
-                      >
-                        {item.title}
-                      </a>
+                      item.title === "Contact" ? (
+                        <Link 
+                          key={index} 
+                          href={item.href}
+                        >
+                          <div className="font-bold hover:text-[#0047FF] cursor-pointer">
+                            {item.title}
+                          </div>
+                        </Link>
+                      ) : (
+                        <a 
+                          key={index} 
+                          href={item.href || "#"} 
+                          className="font-bold hover:text-[#0047FF] cursor-pointer"
+                        >
+                          {item.title}
+                        </a>
+                      )
                     ))}
                     <div className="mt-4 space-y-2">
                       <Button className="w-full bg-[#0047FF] hover:bg-[#0035C8]">
