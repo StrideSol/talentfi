@@ -137,9 +137,15 @@ export default function Navbar() {
                     </DropdownMenuContent>
                   </DropdownMenu>
                 ) : (
-                  <Link key={index} href={item.href || "#"}>
-                    <div className="font-semibold hover:text-[#0047FF] cursor-pointer">{item.title}</div>
-                  </Link>
+                  item.title === "Services" ? (
+                    <a key={index} href={item.href || "#"} className="font-semibold hover:text-[#0047FF] cursor-pointer">
+                      {item.title}
+                    </a>
+                  ) : (
+                    <Link key={index} href={item.href || "#"}>
+                      <div className="font-semibold hover:text-[#0047FF] cursor-pointer">{item.title}</div>
+                    </Link>
+                  )
                 )
               )}
             </div>
@@ -179,9 +185,15 @@ export default function Navbar() {
                           </div>
                         </div>
                       ) : (
-                        <Link key={index} href={item.href || "#"}>
-                          <div className="font-bold hover:text-[#0047FF] cursor-pointer">{item.title}</div>
-                        </Link>
+                        item.title === "Services" ? (
+                          <a key={index} href={item.href || "#"} className="font-bold hover:text-[#0047FF] cursor-pointer">
+                            {item.title}
+                          </a>
+                        ) : (
+                          <Link key={index} href={item.href || "#"}>
+                            <div className="font-bold hover:text-[#0047FF] cursor-pointer">{item.title}</div>
+                          </Link>
+                        )
                       )
                     )}
                     <div className="mt-4 space-y-2">
