@@ -1,0 +1,45 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .globe-grid {
+      fill: none;
+      stroke: #6200EE;
+      stroke-width: 2;
+    }
+    .globe-pattern {
+      fill: #8d43ff;
+      fill-opacity: 0.7;
+    }
+  </style>
+  
+  <!-- Base circle -->
+  <circle cx="250" cy="250" r="240" fill="url(#radialGradient)" />
+  
+  <!-- Gradient definition -->
+  <defs>
+    <radialGradient id="radialGradient" cx="250" cy="250" r="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#9b4dff" />
+      <stop offset="100%" stop-color="#6200EE" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Globe grid pattern -->
+  <path class="globe-grid" d="M10 250 H490" />
+  <path class="globe-grid" d="M30 150 H470" />
+  <path class="globe-grid" d="M30 350 H470" />
+  <path class="globe-grid" d="M70 100 H430" />
+  <path class="globe-grid" d="M70 400 H430" />
+  <path class="globe-grid" d="M120 50 H380" />
+  <path class="globe-grid" d="M120 450 H380" />
+  
+  <path class="globe-grid" d="M250 10 V490" />
+  <path class="globe-grid" d="M150 30 V470" />
+  <path class="globe-grid" d="M350 30 V470" />
+  <path class="globe-grid" d="M100 70 V430" />
+  <path class="globe-grid" d="M400 70 V430" />
+  <path class="globe-grid" d="M50 120 V380" />
+  <path class="globe-grid" d="M450 120 V380" />
+  
+  <!-- Overlay curved patterns for 3D effect -->
+  <path class="globe-pattern" d="M250,10 C150,30 70,150 50,250 C70,350 150,470 250,490 C350,470 430,350 450,250 C430,150 350,30 250,10 Z" opacity="0.2" />
+  <path class="globe-pattern" d="M250,20 C160,40 80,160 60,250 C80,340 160,460 250,480 C340,460 420,340 440,250 C420,160 340,40 250,20 Z" opacity="0.2" />
+</svg>
