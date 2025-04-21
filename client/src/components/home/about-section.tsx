@@ -3,8 +3,8 @@ import React from "react";
 export default function AboutSection() {
   return (
     <section id="about">
-      {/* Gradient Hero Banner */}
-      <div className="bg-gradient-to-r from-[#0047FF] to-[#5000FF] text-white relative">
+      {/* Teal Hero Banner */}
+      <div className="bg-[#7A9392] text-white relative">
         <div className="text-center pt-8">
           <h1 className="text-4xl font-bold">About Talentfi</h1>
           <p className="text-xl mt-2">Connecting South African talent with global opportunities</p>
