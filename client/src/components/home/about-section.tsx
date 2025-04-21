@@ -24,11 +24,13 @@ export default function AboutSection() {
               </p>
             </div>
             <div className="md:w-1/3 flex justify-end items-center mt-8 md:mt-0">
-              <img 
-                src="/images/globe-round-purple.svg" 
-                alt="Global connectivity" 
-                className="w-48 h-48 md:w-64 md:h-64" 
-              />
+              <div className="rounded-full overflow-hidden w-48 h-48 md:w-64 md:h-64 relative">
+                <img 
+                  src="/images/globe-vector.png" 
+                  alt="Global connectivity" 
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
