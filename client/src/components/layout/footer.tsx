@@ -54,7 +54,7 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-300">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mt-1 mr-3" />
-                <span>25 Sandton Drive<br />Sandton, Johannesburg 2196</span>
+                <span>246 Musgrave Rd<br />Musgrave, Berea, Durban, 4001</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-3" />
@@ -62,7 +62,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-3" />
-                <a href="tel:+27112345678" className="hover:text-white">+27 11 234 5678</a>
+                <a href="tel:+27837859881" className="hover:text-white">083 785 9881</a>
               </li>
             </ul>
             <img 
