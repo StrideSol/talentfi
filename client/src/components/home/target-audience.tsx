@@ -16,8 +16,8 @@ export default function TargetAudience() {
                 <path d="M20 21v-2a7 7 0 0 0-14 0v2" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-800 mb-2">Find top talent faster</h3>
-            <p className="text-gray-600">Surface the most qualified candidates, reduce irrelevant applications, and fill critical roles with ease.</p>
+            <h3 className="text-xl font-bold text-gray-800 mb-2">Find Top Talent Without the Wait</h3>
+            <p className="text-gray-600">Quickly discover qualified candidates, reduce irrelevant applications, and fill critical roles with ease, saving time and resources.</p>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#FF9500]">
@@ -31,8 +31,8 @@ export default function TargetAudience() {
                 <path d="M19 12l3 3-3 3" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-800 mb-2">Confidently scale across borders</h3>
-            <p className="text-gray-600">Use insights into talent markets, salary averages, and compliance to make every global hire a success.</p>
+            <h3 className="text-xl font-bold text-gray-800 mb-2">Confidently Expand Across Borders</h3>
+            <p className="text-gray-600">Leverage insights into talent markets, salary trends, and compliance requirements to ensure seamless and successful international hiring.</p>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#0047FF]">
@@ -42,8 +42,8 @@ export default function TargetAudience() {
                 <path d="M12 8v4l3 3" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-800 mb-2">Speed up hiring processes</h3>
-            <p className="text-gray-600">Our streamlined workflow reduces the time-to-hire by 65%, helping you secure top talent before competitors.</p>
+            <h3 className="text-xl font-bold text-gray-800 mb-2">Smarter Hiring, Better Business</h3>
+            <p className="text-gray-600">Streamline your hiring process with tools that align every hire with your business goals, ensuring you secure the right talent quickly and effectively.</p>
           </div>
 
           {/* Row 2 */}
@@ -53,8 +53,8 @@ export default function TargetAudience() {
                 <path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-800 mb-2">Cost-effective expansion</h3>
-            <p className="text-gray-600">Save up to 65% on hiring costs by accessing South Africa's talented workforce at competitive rates.</p>
+            <h3 className="text-xl font-bold text-gray-800 mb-2">Hassle-Free Legally Compliant Global Hiring</h3>
+            <p className="text-gray-600">We handle local compliance, labour laws, and onboarding, so you can scale your team globally without unnecessary delays or complexities.</p>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#FF9500]">
@@ -65,8 +65,8 @@ export default function TargetAudience() {
                 <line x1="9" y1="21" x2="9" y2="9" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-800 mb-2">Simplified compliance</h3>
-            <p className="text-gray-600">Navigate complex international labor laws with our complete EOR solution that handles all legal requirements.</p>
+            <h3 className="text-xl font-bold text-gray-800 mb-2">Advanced Technology for Smarter Hiring</h3>
+            <p className="text-gray-600">Incorporate AI-driven interviews, online assessments, and remote work readiness training through our learning academy to create a seamless and efficient hiring process.</p>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#0047FF]">
@@ -79,8 +79,8 @@ export default function TargetAudience() {
                 <line x1="14" y1="1" x2="14" y2="4" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-800 mb-2">Seamless onboarding</h3>
-            <p className="text-gray-600">Provide a smooth employee experience with our efficient onboarding process, payroll management, and HR support.</p>
+            <h3 className="text-xl font-bold text-gray-800 mb-2">Balancing Innovation with a Human Touch</h3>
+            <p className="text-gray-600">While we utilize advanced technology, our human-first approach ensures every interaction is thoughtful, personal, and tailored to meet your needs.</p>
           </div>
         </div>
       </div>
