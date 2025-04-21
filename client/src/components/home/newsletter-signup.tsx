@@ -77,7 +77,7 @@ export default function NewsletterSignup() {
           style={{ background: "linear-gradient(90deg, rgba(0, 71, 255, 0.2) 0%, rgba(0, 196, 196, 0.2) 100%)" }}
         >
           <div className="md:w-1/3 md:pr-8 flex flex-col justify-center">
-            <div className="text-6xl font-bold">$599</div>
+            <div className="text-6xl font-bold" style={{ color: "#FF9500" }}>$599</div>
             <div className="text-xl mt-2">per employee/month</div>
           </div>
 
