@@ -1,23 +1,32 @@
-import { useState } from "react";
-import { useMutation } from "@tanstack/react-query";
-import { z } from "zod";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "@/components/ui/button";
-import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormMessage,
+} from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
+import { insertNewsletterSubscriptionSchema } from "@shared/schema";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { useMutation } from "@tanstack/react-query";
+import { apiRequest } from "@/lib/queryClient";
+import { z } from "zod";
 
-const formSchema = z.object({
-  email: z.string().email("Please enter a valid email address"),
+const formSchema = insertNewsletterSubscriptionSchema.extend({
+  email: z
+    .string()
+    .min(1, { message: "Email is required" })
+    .email({ message: "Must be a valid email" }),
 });
 
 type FormValues = z.infer<typeof formSchema>;
 
 export default function NewsletterSignup() {
   const { toast } = useToast();
-  
+
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -25,25 +34,22 @@ export default function NewsletterSignup() {
     },
   });
 
-  const { mutate, isPending } = useMutation({
+  const { mutate } = useMutation({
     mutationFn: async (data: FormValues) => {
-      const response = await apiRequest("POST", "/api/newsletter/subscribe", { 
-        email: data.email,
-        subscribedAt: new Date()
-      });
-      return response.json();
+      const res = await apiRequest("POST", "/api/newsletter", data);
+      return await res.json();
     },
     onSuccess: () => {
       toast({
-        title: "Success!",
-        description: "Thank you for subscribing to our newsletter.",
+        title: "Thank you for subscribing!",
+        description: "You have been added to our newsletter.",
       });
       form.reset();
     },
-    onError: (error) => {
+    onError: (error: Error) => {
       toast({
-        title: "Error",
-        description: error instanceof Error ? error.message : "Failed to subscribe to the newsletter. Please try again later.",
+        title: "An error occurred",
+        description: error.message,
         variant: "destructive",
       });
     },
@@ -54,7 +60,7 @@ export default function NewsletterSignup() {
   };
 
   return (
-    <section className="py-16 bg-[#002255] text-white">
+    <section className="py-16 bg-[#00C4C4] text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center mb-10">
           <h2 className="text-3xl font-bold mb-4">Pricing</h2>
@@ -63,78 +69,36 @@ export default function NewsletterSignup() {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row max-w-6xl mx-auto bg-[#001845] rounded-lg p-8">
+        <div className="flex flex-col md:flex-row max-w-6xl mx-auto bg-[#00A3A3] rounded-lg p-8">
           <div className="md:w-1/3 md:pr-8 flex flex-col justify-center">
             <div className="text-6xl font-bold">$599</div>
             <div className="text-xl mt-2">per employee/month</div>
           </div>
 
-          <div className="space-y-6 md:w-2/3 md:pl-8 md:border-l border-blue-800">
-            <div className="flex items-center">
-              <div className="bg-[#E6F0FF] p-2 rounded-full mr-4">
-                <svg className="w-6 h-6 text-[#002255]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
+          <div className="space-y-6 md:w-2/3 md:pl-8 md:border-l border-teal-600">
+            {benefits.map((benefit, index) => (
+              <div className="flex items-center" key={index}>
+                <div className="bg-teal-50 p-2 rounded-full mr-4">
+                  <svg className="w-6 h-6 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>{benefit}</div>
               </div>
-              <div>Hire without opening a local entity</div>
-            </div>
-
-            <div className="flex items-center">
-              <div className="bg-[#E6F0FF] p-2 rounded-full mr-4">
-                <svg className="w-6 h-6 text-[#002255]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <div>Guided onboarding</div>
-            </div>
-
-            <div className="flex items-center">
-              <div className="bg-[#E6F0FF] p-2 rounded-full mr-4">
-                <svg className="w-6 h-6 text-[#002255]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <div>Local payroll paid on time, every time</div>
-            </div>
-
-            <div className="flex items-center">
-              <div className="bg-[#E6F0FF] p-2 rounded-full mr-4">
-                <svg className="w-6 h-6 text-[#002255]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <div>Built-in security and compliance</div>
-            </div>
-
-            <div className="flex items-center">
-              <div className="bg-[#E6F0FF] p-2 rounded-full mr-4">
-                <svg className="w-6 h-6 text-[#002255]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <div>Flexible, localized benefits</div>
-            </div>
-
-            <div className="flex items-center">
-              <div className="bg-[#E6F0FF] p-2 rounded-full mr-4">
-                <svg className="w-6 h-6 text-[#002255]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <div>Offer equity incentives with tax assistance</div>
-            </div>
-
-            <div className="flex items-center">
-              <div className="bg-[#E6F0FF] p-2 rounded-full mr-4">
-                <svg className="w-6 h-6 text-[#002255]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <div>Dedicated experts for local support</div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
     </section>
   );
 }
+
+const benefits = [
+  "Hire without opening a local entity",
+  "Guided onboarding",
+  "Local payroll paid on time, every time",
+  "Built-in security and compliance",
+  "Flexible, localized benefits",
+  "Offer equity incentives with tax assistance",
+  "Dedicated experts for local support"
+];
