@@ -2,7 +2,7 @@ import { Code, LineChart, Headphones as HeadphonesIcon } from "lucide-react";
 
 export default function CustomerJourney() {
   return (
-    <section id="roles-we-source" className="py-12 bg-[#00B3A6]">
+    <section id="roles-we-source" className="py-12 bg-[#FF6B6B]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-2 text-white">Roles We Source</h2>
@@ -13,7 +13,7 @@ export default function CustomerJourney() {
           {/* Role 1 */}
           <div className="flex flex-col md:flex-row mb-8 items-start">
             <div className="w-full md:w-1/6 flex justify-center mb-4 md:mb-0">
-              <div className="bg-[#027C73] p-6 rounded-lg shadow-lg border-l-4 border-[#FF9500]">
+              <div className="bg-[#D84545] p-6 rounded-lg shadow-lg border-l-4 border-[#0047FF]">
                 <Code className="w-8 h-8 text-white" />
               </div>
             </div>
@@ -27,7 +27,7 @@ export default function CustomerJourney() {
           {/* Role 2 */}
           <div className="flex flex-col md:flex-row mb-8 items-start">
             <div className="w-full md:w-1/6 flex justify-center mb-4 md:mb-0">
-              <div className="bg-[#027C73] p-6 rounded-lg shadow-lg border-l-4 border-[#FF9500]">
+              <div className="bg-[#D84545] p-6 rounded-lg shadow-lg border-l-4 border-[#0047FF]">
                 <LineChart className="w-8 h-8 text-white" />
               </div>
             </div>
@@ -41,7 +41,7 @@ export default function CustomerJourney() {
           {/* Role 3 */}
           <div className="flex flex-col md:flex-row items-start">
             <div className="w-full md:w-1/6 flex justify-center mb-4 md:mb-0">
-              <div className="bg-[#027C73] p-6 rounded-lg shadow-lg border-l-4 border-[#FF9500]">
+              <div className="bg-[#D84545] p-6 rounded-lg shadow-lg border-l-4 border-[#0047FF]">
                 <HeadphonesIcon className="w-8 h-8 text-white" />
               </div>
             </div>
