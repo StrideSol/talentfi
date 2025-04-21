@@ -38,6 +38,14 @@ const navItems: NavItem[] = [
     title: "About",
     href: "/#about"
   },
+  {
+    title: "Learning Academy",
+    href: "https://academy.talentfi.co.za"
+  },
+  {
+    title: "Job Listings",
+    href: "https://jobs.talentfi.co.za"
+  },
   { 
     title: "Contact", 
     href: "/contact" 
