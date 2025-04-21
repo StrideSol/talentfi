@@ -25,9 +25,9 @@ export default function AboutSection() {
             </div>
             <div className="md:w-1/3 flex justify-end items-center mt-8 md:mt-0">
               <img 
-                src="/attached_assets/image_1745234035651.png" 
+                src="/globe.png" 
                 alt="Global connectivity" 
-                className="max-w-full object-contain" 
+                className="w-48 h-48 md:w-64 md:h-64 object-contain" 
               />
             </div>
           </div>
