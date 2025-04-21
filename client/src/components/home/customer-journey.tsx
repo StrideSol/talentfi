@@ -2,11 +2,11 @@ import { Code, LineChart, Headphones as HeadphonesIcon } from "lucide-react";
 
 export default function CustomerJourney() {
   return (
-    <section id="roles-we-source" className="py-12 bg-[#FF6B6B]">
+    <section id="roles-we-source" className="py-12 bg-[#F0F0F0]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-2 text-white">Roles We Source</h2>
-          <p className="text-gray-200">Top specialized positions we regularly source for our clients in South Africa</p>
+          <h2 className="text-3xl font-bold mb-2 text-[#333333]">Roles We Source</h2>
+          <p className="text-[#333333]">Top specialized positions we regularly source for our clients in South Africa</p>
         </div>
 
         <div className="max-w-5xl mx-auto">
@@ -18,9 +18,9 @@ export default function CustomerJourney() {
               </div>
             </div>
             <div className="w-full md:w-5/6 md:pl-8">
-              <h3 className="text-xl font-bold text-white mb-2">Software Engineering</h3>
-              <p className="text-gray-200 mb-2">Full-stack developers, mobile developers, DevOps engineers, and data engineers.</p>
-              <p className="text-gray-200">Up to 65% cost savings compared to US-based engineering talent.</p>
+              <h3 className="text-xl font-bold text-[#333333] mb-2">Software Engineering</h3>
+              <p className="text-[#333333] mb-2">Full-stack developers, mobile developers, DevOps engineers, and data engineers.</p>
+              <p className="text-[#333333]">Up to 65% cost savings compared to US-based engineering talent.</p>
             </div>
           </div>
 
@@ -32,9 +32,9 @@ export default function CustomerJourney() {
               </div>
             </div>
             <div className="w-full md:w-5/6 md:pl-8">
-              <h3 className="text-xl font-bold text-white mb-2">Finance & Accounting</h3>
-              <p className="text-gray-200 mb-2">Financial analysts, bookkeepers, accountants, and financial controllers.</p>
-              <p className="text-gray-200">Qualified professionals with international accounting standard experience.</p>
+              <h3 className="text-xl font-bold text-[#333333] mb-2">Finance & Accounting</h3>
+              <p className="text-[#333333] mb-2">Financial analysts, bookkeepers, accountants, and financial controllers.</p>
+              <p className="text-[#333333]">Qualified professionals with international accounting standard experience.</p>
             </div>
           </div>
 
@@ -46,9 +46,9 @@ export default function CustomerJourney() {
               </div>
             </div>
             <div className="w-full md:w-5/6 md:pl-8">
-              <h3 className="text-xl font-bold text-white mb-2">Customer Support</h3>
-              <p className="text-gray-200 mb-2">Support specialists, technical support agents, and customer success managers.</p>
-              <p className="text-gray-200">English-fluent professionals available in compatible time zones for your business.</p>
+              <h3 className="text-xl font-bold text-[#333333] mb-2">Customer Support</h3>
+              <p className="text-[#333333] mb-2">Support specialists, technical support agents, and customer success managers.</p>
+              <p className="text-[#333333]">English-fluent professionals available in compatible time zones for your business.</p>
             </div>
           </div>
         </div>
