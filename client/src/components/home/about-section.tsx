@@ -39,7 +39,7 @@ export default function AboutSection() {
 
         <div className="mt-12 flex justify-center">
           <img 
-            src="/assets/example.png" 
+            src="/attached_assets/image_1745233401639.png" 
             alt="Global talent concept" 
             className="rounded-lg shadow-lg max-w-full md:max-w-md lg:max-w-lg" 
           />

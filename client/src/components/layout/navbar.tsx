@@ -26,11 +26,7 @@ import {
 const navItems = [
   {
     title: "About",
-    items: [
-      { title: "Our Company", href: "#" },
-      { title: "Our Team", href: "#" },
-      { title: "Careers", href: "#" },
-    ],
+    href: "#about"
   },
   {
     title: "Services",
@@ -194,9 +190,15 @@ export default function Navbar() {
                             {item.title}
                           </a>
                         ) : (
-                          <Link key={index} href={item.href || "#"}>
-                            <div className="font-bold hover:text-[#0047FF] cursor-pointer">{item.title}</div>
-                          </Link>
+                          item.title === "About" ? (
+                            <a key={index} href={item.href || "#"} className="font-bold hover:text-[#0047FF] cursor-pointer">
+                              {item.title}
+                            </a>
+                          ) : (
+                            <Link key={index} href={item.href || "#"}>
+                              <div className="font-bold hover:text-[#0047FF] cursor-pointer">{item.title}</div>
+                            </Link>
+                          )
                         )
                       )
                     )}

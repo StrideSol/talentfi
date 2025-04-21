@@ -5,7 +5,7 @@ import LatestPublications from "@/components/home/latest-publications";
 import CustomerJourney from "@/components/home/customer-journey";
 import TargetAudience from "@/components/home/target-audience";
 import NewsletterSignup from "@/components/home/newsletter-signup";
-import UpcomingEvents from "@/components/home/upcoming-events";
+import AboutSection from "@/components/home/about-section";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <TargetAudience />
       <CustomerJourney />
       <NewsletterSignup />
-      <UpcomingEvents />
+      <AboutSection />
     </div>
   );
 }
