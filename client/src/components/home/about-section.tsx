@@ -25,7 +25,7 @@ export default function AboutSection() {
             </div>
             <div className="md:w-1/3 flex justify-end items-center mt-8 md:mt-0">
               <img 
-                src="/globe.png" 
+                src="/images/white-globe.svg" 
                 alt="Global connectivity" 
                 className="w-48 h-48 md:w-64 md:h-64 object-contain" 
               />

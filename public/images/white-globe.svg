@@ -1,0 +1,21 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="250" cy="250" r="240" stroke="white" stroke-width="4" fill="none"/>
+  
+  <!-- Horizontal lines -->
+  <path d="M10 250 H490" stroke="white" stroke-width="2" />
+  <path d="M30 150 H470" stroke="white" stroke-width="2" />
+  <path d="M30 350 H470" stroke="white" stroke-width="2" />
+  <path d="M70 100 H430" stroke="white" stroke-width="2" />
+  <path d="M70 400 H430" stroke="white" stroke-width="2" />
+  <path d="M120 50 H380" stroke="white" stroke-width="2" />
+  <path d="M120 450 H380" stroke="white" stroke-width="2" />
+  
+  <!-- Vertical lines -->
+  <path d="M250 10 V490" stroke="white" stroke-width="2" />
+  <path d="M150 30 V470" stroke="white" stroke-width="2" />
+  <path d="M350 30 V470" stroke="white" stroke-width="2" />
+  <path d="M100 70 V430" stroke="white" stroke-width="2" />
+  <path d="M400 70 V430" stroke="white" stroke-width="2" />
+  <path d="M50 120 V380" stroke="white" stroke-width="2" />
+  <path d="M450 120 V380" stroke="white" stroke-width="2" />
+</svg>
